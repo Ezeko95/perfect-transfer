@@ -15,12 +15,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scroll-smooth"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <head>
-        <link rel="icon" href="/logo.jpg" sizes="any" />
+        <link rel="icon" href="/icon.jpg" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+          rel="stylesheet"
+        ></link>
       </head>
       <body>{children}</body>
     </html>
