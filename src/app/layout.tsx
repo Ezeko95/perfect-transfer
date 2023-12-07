@@ -33,9 +33,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </head>
       <body>{children}</body>
     </html>

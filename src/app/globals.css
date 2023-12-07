@@ -9,5 +9,9 @@
 }
 
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
 }
