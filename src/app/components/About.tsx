@@ -1,11 +1,14 @@
 import React from "react";
 
-const About: React.FC = () => {
+interface AboutUsProps {
+  sectionRef1: React.RefObject<HTMLDivElement>;
+}
+const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
   return (
-    <div className="flex flex-col items-center justify-center max-w-max">
-      <section className="py-5 mx-4 max-w-md">
-        <h2 className="text-4xl font py-4">Misión</h2>
-        <p className="text-lg loading-relaxed">
+    <div className="" id="about" ref={sectionRef1}>
+      <div className="flex flex-col items-start p-44 pl-32 bg-gradient-to-r from-black via-gray-500 to-white">
+        <h2 className="text-4xl font py-4 max-w-sm text-white">Misión</h2>
+        <p className="text-lg max-w-4xl text-white">
           En Perfect Transfer, nos comprometemos a ser el socio confiable y
           líder en la distribución de insumos gráficos, proporcionando productos
           de calidad excepcional que potencien la creatividad y la excelencia en
@@ -13,18 +16,20 @@ const About: React.FC = () => {
           nuestros clientes, brindando soluciones innovadoras y un servicio
           excepcional que impulse su éxito.
         </p>
-        <h2 className="text-4xl py-4">Nuestra visión</h2>
-        <p>
+      </div>
+      <div className="flex flex-col items-end p-44 pr-32 bg-gradient-to-l from-black via-gray-500 to-white">
+        <h2 className="text-4xl py-4 max-w-sm text-white">Nuestra visión</h2>
+        <p className="text-lg max-w-xl text-white">
           Ser reconocidos como la opción preferida y de referencia en la
           industria gráfica, destacando por nuestra excelencia en la calidad de
           productos, servicio al cliente y compromiso con el crecimiento
           sostenible. Aspiramos a expandir nuestra presencia global y ser el
           catalizador de la innovación en la industria de impresión gráfica.
         </p>
-      </section>
-      <section className="max-w-md">
-        <h2 className="text-4xl py-4">Objetivos:</h2>
-        <ol>
+      </div>
+      <div className="flex flex-col items-start p-44 pb-32 bg-gradient-to-r from-black via-gray-500 to-white">
+        <h2 className="text-4xl py-4 text-white">Objetivos:</h2>
+        <ol className="text-white">
           <li>
             Excelencia en la calidad: Proveer insumos gráficos de la más alta
             calidad para satisfacer las necesidades de nuestros clientes.
@@ -45,8 +50,10 @@ const About: React.FC = () => {
             social y ambiental.
           </li>
         </ol>
-        <h2 className="text-4xl py-4">Valores:</h2>
-        <ul>
+      </div>
+      <div className="flex flex-col items-end p-44 pr-28 bg-gradient-to-l from-black via-gray-500 to-white">
+        <h2 className="text-4xl py-4 text-white">Valores:</h2>
+        <ol className="text-white">
           <li>
             Calidad: Comprometidos con la excelencia en la calidad de nuestros
             productos y servicios.
@@ -67,8 +74,8 @@ const About: React.FC = () => {
             Sostenibilidad: Contribuir positivamente al entorno social y
             medioambiental.
           </li>
-        </ul>
-      </section>
+        </ol>
+      </div>
     </div>
   );
 };
