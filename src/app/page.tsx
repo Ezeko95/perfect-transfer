@@ -7,6 +7,7 @@ import Products from "./components/Products";
 
 const Home: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
+  const sectionRef2 = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref.current) {
@@ -17,14 +18,14 @@ const Home: React.FC = () => {
   return (
     <div>
       <div className="relative h-screen overflow-hidden">
-        <NavBar scrollTo={scrollToSection} sectionRef1={sectionRef1} />
+        <NavBar scrollTo={scrollToSection} sectionRef1={sectionRef1} sectionRef2={sectionRef2} />
         <Header scrollTo={scrollToSection} sectionRef1={sectionRef1} />
       </div>
       <div className="w-full">
         <About sectionRef1={sectionRef1} />
       </div>
       <div>
-        <Products />
+        <Products sectionRef2={sectionRef2} />
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export const productCategories: ProductCategory[] = [
     id: 2,
     name: "Lonas",
     description: "Description for Category 2",
-    image: "category2.jpg",
+    image: "lona.jpg",
   },
   {
     id: 3,
@@ -40,12 +40,12 @@ export const productCategories: ProductCategory[] = [
     id: 6,
     name: "Telas y Canvas",
     description: "Description for Category 2",
-    image: "category2.jpg",
+    image: "tela.jpg",
   },
   {
     id: 7,
     name: "Roll-Up y Port-Banner",
     description: "Description for Category 2",
-    image: "category2.jpg",
+    image: "roll-up.png",
   },
 ];
