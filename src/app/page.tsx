@@ -21,7 +21,7 @@ const Home: React.FC = () => {
         <NavBar scrollTo={scrollToSection} sectionRef1={sectionRef1} sectionRef2={sectionRef2} />
         <Header scrollTo={scrollToSection} sectionRef1={sectionRef1} />
       </div>
-      <div className="w-full">
+      <div className="">
         <About sectionRef1={sectionRef1} />
       </div>
       <div>

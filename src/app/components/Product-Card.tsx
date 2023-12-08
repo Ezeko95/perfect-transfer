@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ProductCategory } from "../../assets/products";
 
 interface ProductCardProps {
@@ -6,15 +6,16 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ category }) => {
+
   return (
-    <div className="bg-white rounded-lg shadow-lg p-4">
-      <img
-        src={category.image}
-        alt="product"
-        className="w-32 h-32 object-cover mb-4"
-      />
-      <h2 className="text-xl font-bold mb-2">{category.name}</h2>
-      <p className="text-gray-600">{category.description}</p>
+    <div className="flex items-center flex-col max-w-xs bg-white border border-gray-200 rounded-lg shadow">
+      <img src={category.image} alt="product" className="rounded-t-lg" />
+      <div className="p-5">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+          {category.name}
+        </h5>
+        <p className="mb-2 font-normal text-gray-700">{category.description}</p>
+      </div>
     </div>
   );
 };

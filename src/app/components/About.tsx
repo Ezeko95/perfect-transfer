@@ -19,7 +19,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
       </div>
       <div className="flex flex-col items-end p-44 pr-32 bg-gradient-to-l from-black via-gray-500 to-white">
         <h2 className="text-4xl py-4 max-w-sm text-white">Nuestra visión</h2>
-        <p className="text-lg max-w-xl text-white">
+        <p className="text-lg max-w-4xl text-white">
           Ser reconocidos como la opción preferida y de referencia en la
           industria gráfica, destacando por nuestra excelencia en la calidad de
           productos, servicio al cliente y compromiso con el crecimiento
@@ -29,7 +29,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
       </div>
       <div className="flex flex-col items-start p-44 pb-32 bg-gradient-to-r from-black via-gray-500 to-white">
         <h2 className="text-4xl py-4 text-white">Objetivos:</h2>
-        <ol className="text-white">
+        <ol className="text-white text-lg max-w-6xl">
           <li>
             Excelencia en la calidad: Proveer insumos gráficos de la más alta
             calidad para satisfacer las necesidades de nuestros clientes.
@@ -51,9 +51,9 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           </li>
         </ol>
       </div>
-      <div className="flex flex-col items-end p-44 pr-28 bg-gradient-to-l from-black via-gray-500 to-white">
+      <div className="flex flex-col items-end p-44 pr-32 bg-gradient-to-l from-black via-gray-500 to-white">
         <h2 className="text-4xl py-4 text-white">Valores:</h2>
-        <ol className="text-white">
+        <ol className="text-white text-lg max-w-6xl">
           <li>
             Calidad: Comprometidos con la excelencia en la calidad de nuestros
             productos y servicios.
