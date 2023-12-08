@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import About from "./components/About";
+import Products from "./components/Products";
 
 const Home: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
@@ -14,15 +15,18 @@ const Home: React.FC = () => {
   };
 
   return (
-      <div>
-        <div className="relative h-screen overflow-hidden">
-          <NavBar scrollTo={scrollToSection} sectionRef1={sectionRef1} />
-          <Header scrollTo={scrollToSection} sectionRef1={sectionRef1}/>
-        </div>
-        <div className="w-full">
-          <About sectionRef1={sectionRef1} />
-        </div>
+    <div>
+      <div className="relative h-screen overflow-hidden">
+        <NavBar scrollTo={scrollToSection} sectionRef1={sectionRef1} />
+        <Header scrollTo={scrollToSection} sectionRef1={sectionRef1} />
       </div>
+      <div className="w-full">
+        <About sectionRef1={sectionRef1} />
+      </div>
+      <div>
+        <Products />
+      </div>
+    </div>
   );
 };
 
