@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import About from "./components/About";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
 
 const Home: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
@@ -18,7 +19,11 @@ const Home: React.FC = () => {
   return (
     <div>
       <div className="relative h-screen overflow-hidden">
-        <NavBar scrollTo={scrollToSection} sectionRef1={sectionRef1} sectionRef2={sectionRef2} />
+        <NavBar
+          scrollTo={scrollToSection}
+          sectionRef1={sectionRef1}
+          sectionRef2={sectionRef2}
+        />
         <Header scrollTo={scrollToSection} sectionRef1={sectionRef1} />
       </div>
       <div className="">
@@ -26,6 +31,9 @@ const Home: React.FC = () => {
       </div>
       <div>
         <Products sectionRef2={sectionRef2} />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
