@@ -8,7 +8,7 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ category }) => {
 
   return (
-    <div className="flex items-center flex-col max-w-xs bg-white border border-gray-200 rounded-lg shadow">
+    <div className="flex items-center flex-col max-w-xs bg-white border border-gray-200 rounded-lg shadow-xl">
       <img src={category.image} alt="product" className="rounded-t-lg" />
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">

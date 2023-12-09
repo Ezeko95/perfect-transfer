@@ -8,7 +8,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
     <div className="" id="about" ref={sectionRef1}>
       <div
         className="flex flex-col items-start p-44 pl-32"
-        style={{ backgroundImage: "url('/textura-hormigon.jpg')" }}
+        style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('/textura-hormigon.jpg')" }}
       >
         <h2 className="text-4xl font py-4 px-6 font-bold border border-gray-100 rounded-t-sm max-w-sm text-gray-600 bg-gray-100">
           Misión
@@ -24,7 +24,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
       </div>
       <div
         className="flex flex-col items-end p-44 pr-32"
-        style={{ backgroundImage: "url('/textura-tela.jpg')" }}
+        style={{ backgroundImage: "linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('/textura-tela.jpg')" }}
       >
         <h2 className="text-4xl p-6 max-w-sm text-white rounded-t-sm bg-gray-600">
           Nuestra visión
@@ -39,7 +39,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
       </div>
       <div
         className="flex flex-col items-start p-44 pb-32"
-        style={{ backgroundImage: "url('/textura-madera.jpg')" }}
+        style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('/textura-madera.jpg')" }}
       >
         <h2 className="text-4xl font-bold p-6 text-gray-600 bg-gray-100 rounded-t-sm">
           Objetivos:
@@ -68,7 +68,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
       </div>
       <div
         className="flex flex-col items-end p-44 pr-32"
-        style={{ backgroundImage: "url('/textura-vidrio.jpg')" }}
+        style={{ backgroundImage: "linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('/textura-vidrio.jpg')" }}
       >
         <h2 className="text-4xl p-6 text-white bg-gray-600 rounded-t-sm">
           Valores:

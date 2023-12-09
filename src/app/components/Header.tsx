@@ -26,14 +26,14 @@ const Header: React.FC<HeaderProps> = ({ sectionRef1, scrollTo }) => {
           <a
             href="#about"
             onClick={() => scrollTo(sectionRef1)}
-            className="text-white bg-transparent border-2 border-white hover:bg-white hover:text-black px-6 py-2 rounded-md text-2xl font-medium inline-block"
+            className="text-black bg-white  hover:bg-lime-600 hover:shadow-lg hover:shadow-white hover:text-black px-6 py-2 transition-transform transform hover:scale-110 rounded-md text-2xl font-medium inline-block"
           >
             Descubre
           </a>
           <span className="mx-10" />
           <a
             href="#contact"
-            className="text-white bg-transparent border-2 border-white hover:bg-white hover:text-black px-6 py-2 rounded-md text-2xl font-medium inline-block"
+            className="text-white bg-transparent border-2 border-white hover:bg-white hover:text-black hover:shadow-lime-600 hover:shadow-lg transition-transform transform hover:scale-110 hover:shadow-r-md px-6 py-2 rounded-md text-2xl font-medium inline-block"
           >
             Contacto
           </a>
