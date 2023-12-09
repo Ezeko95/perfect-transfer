@@ -8,7 +8,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ sectionRef1, scrollTo }) => {
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen overflow-hidden font-monserrat">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ sectionRef1, scrollTo }) => {
       />
       <div className="flex flex-col z-10 relative h-full justify-center items-center gap-y-52">
         <div className="mb-8 mt-8 p-3 max-w-6xl bg-black opacity-75 py-8">
-          <h1 className="text-6xl text-white font-light italic">
+          <h1 className="text-6xl text-white italic">
             "Transformamos la impresión en una experiencia de excelencia."
           </h1>
         </div>

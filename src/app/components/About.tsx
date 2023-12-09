@@ -5,15 +5,15 @@ interface AboutUsProps {
 }
 const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
   return (
-    <div className="" id="about" ref={sectionRef1}>
+    <div className="font-garamond" id="about" ref={sectionRef1}>
       <div
-        className="flex flex-col items-start p-44 pl-32"
-        style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('/textura-hormigon.jpg')" }}
+        className="flex flex-col items-start p-36 pl-24 gap-y-20"
+        style={{ backgroundImage: "linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('/textura-hormigon.jpg')" }}
       >
-        <h2 className="text-4xl font py-4 px-6 font-bold border border-gray-100 rounded-t-sm max-w-sm text-gray-600 bg-gray-100">
+        <h2 className="text-4xl text-black py-4 px-6 font-bold rounded-t-sm max-w-sm bg-white bg-opacity-50">
           Misión
         </h2>
-        <p className="text-lg max-w-4xl py-8 px-6 text-gray-900 font-light border border-gray-100 rounded-b-sm rounded-r-sm bg-gray-100">
+        <p className="text-2xl max-w-4xl py-8 px-6 text-white font-normal rounded-b-sm rounded-r-sm bg-black bg-opacity-30">
           Estamos comprometidos a ser el socio confiable y líder en la
           distribución de insumos gráficos, proporcionando productos de calidad
           excepcional que potencien la creatividad y la excelencia en la
@@ -23,13 +23,13 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
         </p>
       </div>
       <div
-        className="flex flex-col items-end p-44 pr-32"
+        className="flex flex-col items-end p-36 pr-24 gap-y-20"
         style={{ backgroundImage: "linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('/textura-tela.jpg')" }}
       >
         <h2 className="text-4xl p-6 max-w-sm text-white rounded-t-sm bg-gray-600">
           Nuestra visión
         </h2>
-        <p className="text-lg font-light max-w-4xl p-8 text-white bg-gray-600 rousmed-b-sm rounded-l-sm">
+        <p className="text-2xl font-light max-w-4xl p-8 text-white bg-black bg-opacity-30">
           Ser reconocidos como la opción preferida y de referencia en la
           industria gráfica, destacando por nuestra excelencia en la calidad de
           productos, servicio al cliente y compromiso con el crecimiento
@@ -38,15 +38,15 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
         </p>
       </div>
       <div
-        className="flex flex-col items-start p-44 pb-32"
+        className="flex flex-col items-start p-36 pl-24 gap-y-20"
         style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('/textura-madera.jpg')" }}
       >
-        <h2 className="text-4xl font-bold p-6 text-gray-600 bg-gray-100 rounded-t-sm">
+        <h2 className="text-4xl font-garamond font-light p-6 text-black bg-white bg-opacity-50 rounded-t-sm">
           Objetivos:
         </h2>
-        <ol className="text-lg font-light max-w-7xl p-8 text-gray-900 bg-gray-100 rounded-b-sm rounded-r-sm list-disc">
+        <ol className="text-2xl font-light max-w-7xl p-8 text-white bg-black bg-opacity-50 list-disc">
           <li>
-            Excelencia en la calidad: Proveer insumos gráficos de la más alta
+            Excelencia en la <span className="text-teal-500">calidad</span>: Proveer insumos gráficos de la más alta
             calidad para satisfacer las necesidades de nuestros clientes.
           </li>
           <li>

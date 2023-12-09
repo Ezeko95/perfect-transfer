@@ -17,18 +17,13 @@ const Footer: React.FC = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a className="hover:underline">Lunes a Viernes</a>
+                  <a>Lunes a Viernes</a>
                 </li>
                 <li className="mb-4">
-                  <a className="hover:underline">8:30 - 17:00 hs</a>
+                  <a>8:30 - 17:00 hs</a>
                 </li>
                 <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    11-5053-9020
-                  </a>
+                  <a>11-5053-9020</a>
                 </li>
               </ul>
             </div>
@@ -41,6 +36,8 @@ const Footer: React.FC = () => {
                   <a
                     href="https://www.instagram.com/perfecttransfersrl/"
                     className="hover:underline "
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Instagram
                   </a>
@@ -49,6 +46,8 @@ const Footer: React.FC = () => {
                   <a
                     href="https://www.facebook.com/perfecttransfersrl"
                     className="hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Facebook
                   </a>

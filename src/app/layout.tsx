@@ -32,8 +32,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap"
           rel="stylesheet"
         />
+
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Montserrat:ital,wght@0,400;1,300&display=swap"
           rel="stylesheet"
         />
       </head>
