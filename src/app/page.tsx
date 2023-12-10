@@ -32,7 +32,7 @@ const Home: React.FC = () => {
       </div>
       <div>
         <Products sectionRef2={sectionRef2} />
-        <Download></Download>
+        <Download />
       </div>
       <div>
         <Footer />

@@ -17,8 +17,8 @@ const Header: React.FC<HeaderProps> = ({ sectionRef1, scrollTo }) => {
         }}
       />
       <div className="flex flex-col z-10 relative h-full justify-center items-center gap-y-52">
-        <div className="mb-8 mt-8 p-3 max-w-6xl bg-black opacity-75 py-8">
-          <h1 className="text-6xl text-white italic">
+        <div className="mb-8 mt-8 p-3 max-w-5xl bg-black opacity-85 py-8">
+          <h1 className="text-5xl text-white italic">
             "Transformamos la impresión en una experiencia de excelencia."
           </h1>
         </div>
@@ -26,14 +26,14 @@ const Header: React.FC<HeaderProps> = ({ sectionRef1, scrollTo }) => {
           <a
             href="#about"
             onClick={() => scrollTo(sectionRef1)}
-            className="text-black bg-white  hover:bg-lime-600 hover:shadow-lg hover:shadow-white hover:text-black px-6 py-2 transition-transform transform hover:scale-110 rounded-md text-2xl font-medium inline-block"
+            className="text-black bg-white  hover:bg-transparent hover:border-2 hover:text-white hover:border-white  px-6 py-2 transition-transform transform hover:scale-110 rounded-sm text-2xl font-medium inline-block"
           >
             Descubre
           </a>
           <span className="mx-10" />
           <a
             href="#contact"
-            className="text-white bg-transparent border-2 border-white hover:bg-white hover:text-black hover:shadow-lime-600 hover:shadow-lg transition-transform transform hover:scale-110 hover:shadow-r-md px-6 py-2 rounded-md text-2xl font-medium inline-block"
+            className="text-white bg-transparent border-2 border-white hover:bg-white hover:text-black  transition-transform transform hover:scale-110 hover:shadow-r-md px-6 py-2 rounded-sm text-2xl font-medium inline-block"
           >
             Contacto
           </a>

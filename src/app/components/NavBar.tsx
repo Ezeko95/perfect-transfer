@@ -13,7 +13,7 @@ const NavBar: React.FC<NavBarProps> = ({
   sectionRef2,
 }) => {
   return (
-    <nav className="bg-gray-100 font-monserrat">
+    <nav className="bg-gray-100 font-garamond">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-3 items-center h-16">
           <div className="col-span-1">
@@ -24,20 +24,20 @@ const NavBar: React.FC<NavBarProps> = ({
             <a
               href="#product"
               onClick={() => scrollTo(sectionRef2)}
-              className="text-black hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-lg font-medium inline-block"
+              className="text-black hover:bg-green-700 hover:bg-opacity-70 hover:text-white px-3 py-2 rounded-md text-lg font-garamond font-medium inline-block transition-colors duration-300 ease-in-out"
             >
               Productos
             </a>
             <a
               href="#contact"
-              className="text-black hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-lg font-medium inline-block"
+              className="text-black hover:bg-green-700 hover:bg-opacity-70 hover:text-white px-3 py-2 rounded-md text-lg font-medium inline-block transition-colors duration-300 ease-in-out"
             >
               Contacto
             </a>
             <a
               href="#about"
               onClick={() => scrollTo(sectionRef1)}
-              className="text-black hover:bg-green-600 hover:text-white px-3 py-2 rounded-md text-lg font-medium inline-block"
+              className="text-black hover:bg-green-700 hover:bg-opacity-70 hover:text-white px-3 py-2 rounded-md text-lg font-medium inline-block transition-colors duration-300 ease-in-out"
             >
               Acerca de nosotros
             </a>
