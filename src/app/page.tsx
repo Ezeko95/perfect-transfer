@@ -6,6 +6,7 @@ import About from "./components/About";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
 import Download from "./components/Download";
+import Contact from "./components/Contact";
 
 const Home: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
@@ -27,16 +28,11 @@ const Home: React.FC = () => {
         />
         <Header scrollTo={scrollToSection} sectionRef1={sectionRef1} />
       </div>
-      <div className="">
         <About sectionRef1={sectionRef1} />
-      </div>
-      <div>
         <Products sectionRef2={sectionRef2} />
         <Download />
-      </div>
-      <div>
+        <Contact />
         <Footer />
-      </div>
     </div>
   );
 };
