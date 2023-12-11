@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ sectionRef1, scrollTo }) => {
             onClick={() => scrollTo(sectionRef1)}
             className="text-black bg-white  hover:bg-transparent hover:border-2 hover:text-white hover:border-white  px-6 py-2 transition-transform transform hover:scale-110 rounded-sm text-2xl font-medium inline-block"
           >
-            Descubre
+            Sobre Nosotros
           </a>
           <span className="mx-10" />
           <a
