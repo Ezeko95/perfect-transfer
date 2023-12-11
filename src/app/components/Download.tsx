@@ -7,11 +7,11 @@ const Download: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center py-20 bg-gray-200">
+    <div className="flex justify-center py-10 bg-gray-300">
       <a
         href="#"
         onClick={handleDownload}
-        className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        className="bg-blue-500 text-white font-semibold transition-transform duration-300 transform hover:scale-110 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
       >
         Ver catalogo
       </a>

@@ -63,11 +63,11 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           contacto con nosotros!
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center max-w-full mt-10 mx-auto">
+      <div className="flex flex-col items-center max-w-full mt-10">
         <form onSubmit={handleSubmit} className="flex flex-col">
           <label className="font-garamond text-2xl">Nombre</label>
           <input
-            className="bg-gray-700 text-white rounded-md w-96 h-10 px-2 font-garamond text-lg"
+            className="border border-gray-700 text-white font-bold rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="text"
             name="name"
             placeholder="Escribe tu nombre"
@@ -75,19 +75,10 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
             onChange={changeHandler}
           />
           <br />
-          <label className="font-garamond text-2xl">Empresa</label>
-          <input
-            className="bg-gray-700 text-white rounded-md w-96 h-10 px-2 font-garamond text-lg"
-            type="text"
-            name="company"
-            placeholder="Escribe tu empresa"
-            value={contactForm.company}
-            onChange={changeHandler}
-          />
-          <br />
+          
           <label className="font-garamond text-2xl">Email</label>
           <input
-            className="bg-gray-700 text-white rounded-md w-96 h-10 px-2 font-garamond text-lg"
+            className="border border-gray-700 text-white font-bold  rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="email"
             name="email"
             placeholder="Escribe tu email"
@@ -97,7 +88,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           <br />
           <label className="font-garamond text-2xl">Numero de telefono</label>
           <input
-            className="bg-gray-700 text-white rounded-md w-96 h-10 px-2 font-garamond text-lg"
+            className="border border-gray-700 text-white font-bold rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="tel"
             name="phone"
             placeholder="Escribe tu telefono"
@@ -107,7 +98,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           <br />
           <label className="font-garamond text-2xl">Mensaje</label>
           <textarea
-            className="bg-gray-700 text-white rounded-md w-96 px-2 font-garamond text-lg"
+            className="border border-gray-700 text-white font-bold rounded-md w-96 px-2 font-garamond text-lg"
             value={contactForm.comment}
             rows={6}
             name="comment"
@@ -116,7 +107,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           />
           <br />
           <button
-            className="mb-20 bg-gray-600 hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded"
+            className="mb-20 border-gray-600 hover:bg-blue-500 text-black font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded"
             type="submit"
           >
             Submit
