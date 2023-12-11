@@ -105,13 +105,13 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
             onChange={changeHandler}
           />
           <br />
-          <label className="font-garamond text-2xl">Comentario</label>
+          <label className="font-garamond text-2xl">Mensaje</label>
           <textarea
             className="bg-gray-700 text-white rounded-md w-96 px-2 font-garamond text-lg"
             value={contactForm.comment}
             rows={6}
             name="comment"
-            placeholder="Escribe tus preguntas o dudas"
+            placeholder="Escribe tu mensaje"
             onChange={changeHandler}
           />
           <br />
