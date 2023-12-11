@@ -59,7 +59,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           Ponete en contacto
         </h1>
         <p className="font-garamond text-2xl">
-          Tienes alguna pregunta? Quieres saber mas sobre nosotros? Ponete en
+          Tenés alguna pregunta? Querés saber más sobre nosotros? Ponete en
           contacto con nosotros!
         </p>
       </div>

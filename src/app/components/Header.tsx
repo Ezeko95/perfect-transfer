@@ -1,12 +1,7 @@
 "use client";
 import React from "react";
 
-interface HeaderProps {
-  scrollTo: (ref: React.RefObject<HTMLDivElement>) => void;
-  sectionRef1: React.RefObject<HTMLDivElement>;
-}
-
-const Header: React.FC<HeaderProps> = ({ sectionRef1, scrollTo }) => {
+const Header: React.FC = () => {
   return (
     <div className="relative h-screen overflow-hidden font-monserrat">
       <div
@@ -18,22 +13,21 @@ const Header: React.FC<HeaderProps> = ({ sectionRef1, scrollTo }) => {
       />
       <div className="flex flex-col z-10 relative h-full justify-center items-center gap-y-52">
         <div className="mb-8 mt-8 p-3 max-w-5xl bg-black opacity-85 py-8">
-          <h1 className="text-5xl text-white italic">
+          <h1 className="text-5xl text-white italic text-center">
             "Transformamos la impresión en una experiencia de excelencia."
           </h1>
         </div>
-        <div className="flex justify-center px-4">
+        <div className="flex justify-center">
           <a
             href="#about"
-            onClick={() => scrollTo(sectionRef1)}
-            className="text-black bg-white  hover:bg-transparent hover:border-2 hover:text-white hover:border-white  px-6 py-2 transition-transform transform hover:scale-110 rounded-sm text-2xl font-medium inline-block"
+            className="text-black bg-white px-5 py-2 transition-transform transform hover:scale-110 rounded-sm text-2xl font-medium inline-block"
           >
             Sobre Nosotros
           </a>
           <span className="mx-10" />
           <a
             href="#contact"
-            className="text-white bg-transparent border-2 border-white hover:bg-white hover:text-black  transition-transform transform hover:scale-110 hover:shadow-r-md px-6 py-2 rounded-sm text-2xl font-medium inline-block"
+            className="text-white bg-transparent border-2 border-white  transition-transform transform hover:scale-110 hover:shadow-r-md px-5  py-2 rounded-sm text-2xl font-medium inline-block"
           >
             Contacto
           </a>

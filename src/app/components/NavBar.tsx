@@ -32,6 +32,7 @@ const NavBar: React.FC<NavBarProps> = ({
             </a>
             <a
               href="#contact"
+              onClick={() => scrollTo(sectionRef3)}
               className="text-black hover:bg-green-700 hover:bg-opacity-70 hover:text-white px-3 py-2 rounded-md text-lg font-medium inline-block transition-colors duration-300 ease-in-out"
             >
               Contacto

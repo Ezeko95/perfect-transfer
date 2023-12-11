@@ -1,40 +1,32 @@
 "use client";
 import React, { useRef } from "react";
-import NavBar from "./components/NavBar";
-import Header from "./components/Header";
-import About from "./components/About";
-import Products from "./components/Products";
-import Footer from "./components/Footer";
-import Download from "./components/Download";
-import Contact from "./components/Contact";
+import {
+  About,
+  Contact,
+  Download,
+  Footer,
+  Header,
+  NavBar,
+  NewNavBar,
+  Products,
+} from "./components";
 
 const Home: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
   const sectionRef2 = useRef<HTMLDivElement>(null);
   const sectionRef3 = useRef<HTMLDivElement>(null);
 
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div>
       <div className="relative h-screen overflow-hidden">
-        <NavBar
-          scrollTo={scrollToSection}
-          sectionRef1={sectionRef1}
-          sectionRef2={sectionRef2}
-          sectionRef3={sectionRef3}
-        />
-        <Header scrollTo={scrollToSection} sectionRef1={sectionRef1} />
+        <NewNavBar />
+        <Header />
       </div>
-        <About sectionRef1={sectionRef1} />
-        <Products sectionRef2={sectionRef2} />
-        <Download />
-        <Contact sectionRef3={sectionRef3} />
-        <Footer />
+      <About sectionRef1={sectionRef1} />
+      <Products sectionRef2={sectionRef2} />
+      <Download />
+      <Contact sectionRef3={sectionRef3} />
+      <Footer />
     </div>
   );
 };
