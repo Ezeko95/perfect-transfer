@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 const Home: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
   const sectionRef2 = useRef<HTMLDivElement>(null);
+  const sectionRef3 = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref.current) {
@@ -25,13 +26,14 @@ const Home: React.FC = () => {
           scrollTo={scrollToSection}
           sectionRef1={sectionRef1}
           sectionRef2={sectionRef2}
+          sectionRef3={sectionRef3}
         />
         <Header scrollTo={scrollToSection} sectionRef1={sectionRef1} />
       </div>
         <About sectionRef1={sectionRef1} />
         <Products sectionRef2={sectionRef2} />
         <Download />
-        <Contact />
+        <Contact sectionRef3={sectionRef3} />
         <Footer />
     </div>
   );

@@ -5,12 +5,14 @@ interface NavBarProps {
   scrollTo: (ref: React.RefObject<HTMLDivElement>) => void;
   sectionRef1: React.RefObject<HTMLDivElement>;
   sectionRef2: React.RefObject<HTMLDivElement>;
+  sectionRef3: React.RefObject<HTMLDivElement>;
 }
 
 const NavBar: React.FC<NavBarProps> = ({
   scrollTo,
   sectionRef1,
   sectionRef2,
+  sectionRef3,
 }) => {
   return (
     <nav className="bg-gray-100 font-garamond">

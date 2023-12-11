@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 
-const Contact: React.FC = () => {
+interface ContactProps {
+  sectionRef3: React.RefObject<HTMLDivElement>;
+}
+
+const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
   const [comment, setComment] = useState("");
+  const [submissionStatus, setSubmissionStatus] = useState<boolean | string>(
+    false
+  );
 
   const [contactForm, setContactForm] = useState({
     name: "",
@@ -29,9 +36,11 @@ const Contact: React.FC = () => {
       if (response.ok) {
         // Handle successful form submission
         console.log("Form submitted successfully!");
+        setSubmissionStatus(true);
       } else {
         // Handle form submission failure
         console.error("Form submission failed!");
+        setSubmissionStatus("error");
       }
     } catch (error) {
       console.log(error);
@@ -44,7 +53,7 @@ const Contact: React.FC = () => {
     setContactForm({ ...contactForm, [e.target.name]: e.target.value });
   };
   return (
-    <div className="flex flex-col h-fit pt-20 ">
+    <div id="contact" ref={sectionRef3} className="flex flex-col h-fit pt-20 ">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-garamond text-7xl font-bold mb-5">
           Ponte en contacto
@@ -113,6 +122,14 @@ const Contact: React.FC = () => {
             Submit
           </button>
         </form>
+        {submissionStatus === true && (
+          <p style={{ color: "green" }}>Tu mensaje ha sido enviado!</p>
+        )}
+        {submissionStatus === false && (
+          <p style={{ color: "red" }}>
+            Tu mensaje esta incompleto, por favor llena todos los campos
+          </p>
+        )}
       </div>
     </div>
   );
