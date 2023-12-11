@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         monserrat: ["Monserrat", "serif"],
         garamond: ["EB Garamond", "sans-serif"],
+        tinos: ["Tinos", "serif"],
       },
     },
   },

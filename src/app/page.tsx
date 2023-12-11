@@ -6,7 +6,6 @@ import {
   Download,
   Footer,
   Header,
-  NavBar,
   NewNavBar,
   Products,
 } from "./components";
