@@ -107,7 +107,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           />
           <br />
           <button
-            className="mb-20 border-gray-600 hover:bg-blue-500 text-black font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded"
+            className="mb-20 border-gray-600 hover:bg-gray-900 text-black font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded"
             type="submit"
           >
             Submit

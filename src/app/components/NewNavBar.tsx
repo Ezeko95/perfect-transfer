@@ -5,7 +5,7 @@ const NewNavBar: React.FC = () => {
   return (
     <nav className="bg-white dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <img src="/logo.png" className="h-12" alt="Flowbite Logo" />
+        <img src="/logo-invertido.png" className="h-12" alt="Flowbite Logo" />
         <button
           data-collapse-toggle="navbar-default"
           type="button"

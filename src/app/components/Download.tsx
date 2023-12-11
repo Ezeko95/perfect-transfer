@@ -7,7 +7,7 @@ const Download: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center py-10 bg-gray-300">
+    <div className="flex justify-center pb-16 bg-gray-900">
       <a
         href="#"
         onClick={handleDownload}
