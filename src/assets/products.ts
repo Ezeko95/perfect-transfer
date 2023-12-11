@@ -18,24 +18,24 @@ export const productCategories: ProductCategory[] = [
     description: "Description for Category 2",
     image: "lona.png",
   },
-  // {
-  //   id: 3,
-  //   name: "Vinilos",
-  //   description: "Description for Category 2",
-  //   image: "category2.jpg",
-  // },
+  {
+    id: 3,
+    name: "Vinilos",
+    description: "Description for Category 2",
+    image: "vinilo.png",
+  },
   // {
   //   id: 4,
-  //   name: "PET",
-  //   description: "Description for Category 2",
-  //   image: "category2.jpg",
-  // },
-  // {
-  //   id: 5,
   //   name: "Transfer",
   //   description: "Description for Category 2",
   //   image: "category2.jpg",
   // },
+  {
+    id: 5,
+    name: "PET",
+    description: "Description for Category 2",
+    image: "/PET.png",
+  },
   {
     id: 6,
     name: "Telas y Canvas",

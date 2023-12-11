@@ -56,7 +56,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
     <div id="contact" ref={sectionRef3} className="flex flex-col h-fit pt-20 ">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-garamond text-7xl font-bold mb-5">
-          Ponte en contacto
+          Ponete en contacto
         </h1>
         <p className="font-garamond text-2xl">
           Tienes alguna pregunta? Quieres saber mas sobre nosotros? Ponete en
