@@ -125,7 +125,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
         {submissionStatus === true && (
           <p style={{ color: "green" }}>Tu mensaje ha sido enviado!</p>
         )}
-        {submissionStatus === false && (
+        {submissionStatus === "error" && (
           <p style={{ color: "red" }}>
             Tu mensaje esta incompleto, por favor llena todos los campos
           </p>
