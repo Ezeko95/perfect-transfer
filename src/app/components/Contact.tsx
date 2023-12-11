@@ -15,9 +15,27 @@ const Contact: React.FC = () => {
     comment: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
+    try {
+      const response = await fetch("https://formspree.io/f/xknldknv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contactForm),
+      });
+
+      if (response.ok) {
+        // Handle successful form submission
+        console.log("Form submitted successfully!");
+      } else {
+        // Handle form submission failure
+        console.error("Form submission failed!");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const changeHandler = (
@@ -25,9 +43,6 @@ const Contact: React.FC = () => {
   ) => {
     setContactForm({ ...contactForm, [e.target.name]: e.target.value });
   };
-
-  console.log(contactForm);
-
   return (
     <div className="flex flex-col h-fit pt-20 ">
       <div className="flex flex-col items-center justify-center">
