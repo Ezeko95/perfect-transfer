@@ -75,7 +75,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
             onChange={changeHandler}
           />
           <br />
-          
+
           <label className="font-garamond text-2xl">Email</label>
           <input
             className="border border-gray-700 text-black font-medium  rounded-md w-96 h-10 px-2 font-garamond text-lg"
@@ -114,10 +114,30 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           </button>
         </form>
         {submissionStatus === true && (
-          <p style={{ color: "green" }}>Tu mensaje ha sido enviado!</p>
+          <p
+            style={{
+              color: "green",
+              backgroundColor: "#DFFFD6",
+              padding: "10px",
+              borderRadius: "5px",
+              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+              marginBottom: "50px",
+            }}
+          >
+            Tu mensaje ha sido enviado!
+          </p>
         )}
         {submissionStatus === "error" && (
-          <p style={{ color: "red" }}>
+          <p
+            style={{
+              color: "red",
+              backgroundColor: "#ffe6e6",
+              padding: "10px",
+              borderRadius: "5px",
+              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+              marginBottom: "50px",
+            }}
+          >
             Tu mensaje esta incompleto, por favor llena todos los campos
           </p>
         )}
