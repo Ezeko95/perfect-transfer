@@ -3,7 +3,7 @@ import Contact from "./Contact";
 import Download from "./Download";
 import Footer from "./Footer";
 import Header from "./Header";
-import NewNavBar from "./NewNavBar";
+import NavBar from "./NavBar";
 import ProductCard from "./Product-Card";
 import Products from "./Products";
 
@@ -13,7 +13,7 @@ export {
   Download,
   Footer,
   Header,
-  NewNavBar,
+  NavBar,
   ProductCard,
   Products,
 };

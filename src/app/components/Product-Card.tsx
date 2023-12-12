@@ -14,7 +14,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ category }) => {
           {category.name}
         </h5>
         <p className="mb-2 font-normal text-gray-700">{category.description}</p>
-        <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-md hover:bg-gray-500">
+        <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-md hover:bg-gray-500">
           Ficha técnica
         </button>
       </div>

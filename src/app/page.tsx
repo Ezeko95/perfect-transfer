@@ -6,7 +6,7 @@ import {
   Download,
   Footer,
   Header,
-  NewNavBar,
+  NavBar,
   Products,
 } from "./components";
 
@@ -17,8 +17,8 @@ const Home: React.FC = () => {
 
   return (
     <div>
-        <NewNavBar />
-        <Header />
+      <NavBar />
+      <Header />
       <About sectionRef1={sectionRef1} />
       <Products sectionRef2={sectionRef2} />
       <Download />
