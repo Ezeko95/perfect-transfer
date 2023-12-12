@@ -17,10 +17,8 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <div className="relative h-screen overflow-hidden">
         <NewNavBar />
         <Header />
-      </div>
       <About sectionRef1={sectionRef1} />
       <Products sectionRef2={sectionRef2} />
       <Download />
