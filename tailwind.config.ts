@@ -18,6 +18,16 @@ const config: Config = {
         garamond: ["EB Garamond", "sans-serif"],
         tinos: ["Tinos", "serif"],
       },
+      animation: {
+        fade: "fadeIn 5s ease-in-in",
+      },
+      // that is actual animation
+      keyframes: (theme) => ({
+        fadeIn: {
+          "0%": { backgroundColor: "colors.red.300" },
+          "100%": { backgroundColor: "colors.transparent" },
+        },
+      }),
     },
   },
   plugins: [],

@@ -21,7 +21,7 @@ export default function RootLayout({
       style={{ scrollBehavior: "smooth" }}
     >
       <head>
-        <link rel="icon" href="/logo-invertido.png" sizes="any" />
+        <link rel="icon" href="/logo-miniatura.png" sizes="logo" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

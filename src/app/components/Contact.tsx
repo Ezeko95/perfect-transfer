@@ -67,7 +67,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
         <form onSubmit={handleSubmit} className="flex flex-col">
           <label className="font-garamond text-2xl">Nombre</label>
           <input
-            className="border border-gray-700 text-white font-bold rounded-md w-96 h-10 px-2 font-garamond text-lg"
+            className="border border-gray-700 text-black font-medium rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="text"
             name="name"
             placeholder="Escribe tu nombre"
@@ -78,7 +78,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           
           <label className="font-garamond text-2xl">Email</label>
           <input
-            className="border border-gray-700 text-white font-bold  rounded-md w-96 h-10 px-2 font-garamond text-lg"
+            className="border border-gray-700 text-black font-medium  rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="email"
             name="email"
             placeholder="Escribe tu email"
@@ -88,7 +88,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           <br />
           <label className="font-garamond text-2xl">Numero de telefono</label>
           <input
-            className="border border-gray-700 text-white font-bold rounded-md w-96 h-10 px-2 font-garamond text-lg"
+            className="border border-gray-700 text-black font-medium rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="tel"
             name="phone"
             placeholder="Escribe tu telefono"
@@ -98,7 +98,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           <br />
           <label className="font-garamond text-2xl">Mensaje</label>
           <textarea
-            className="border border-gray-700 text-white font-bold rounded-md w-96 px-2 font-garamond text-lg"
+            className="border border-gray-700 text-black font-medium rounded-md w-96 px-2 font-garamond text-lg"
             value={contactForm.comment}
             rows={6}
             name="comment"

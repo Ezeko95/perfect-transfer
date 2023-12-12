@@ -1,13 +1,14 @@
 import React from "react";
+import Animation from "./Animation";
 
 interface AboutUsProps {
   sectionRef1: React.RefObject<HTMLDivElement>;
 }
 const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
   return (
-    <div className="font-garamond" id="about" ref={sectionRef1}>
+    <div className="font-garamond " id="about" ref={sectionRef1}>
       <div className="flex flex-row items-center justify-center px-36 py-12">
-        <div className="">
+        <div>
           <h2 className="text-4xl font-garamond font-light italic text-white py-4 px-6 rounded-t-sm max-w-sm bg-gray-900">
             Misión
           </h2>
@@ -20,6 +21,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
             excepcional que impulse su éxito.
           </p>
         </div>
+       
         <div className="">
           <img src="/prueba.jpg" width={"620"} alt="prueba" />
         </div>
@@ -61,9 +63,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
               Brindar un servicio personalizado, ágil y confiable.
             </li>
             <li>
-              <span className=" font-bold text-2xl">
-                Innovación continua:
-              </span>{" "}
+              <span className=" font-bold text-2xl">Innovación continua:</span>{" "}
               Estar a la vanguardia de la industria, ofreciendo productos
               innovadores y soluciones creativas.
             </li>
@@ -92,25 +92,21 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
               productos y servicios.
             </li>
             <li>
-              <span className=" font-bold text-2xl">Integridad:</span>{" "}
-              Actuar con honestidad, transparencia y ética en todas nuestras
+              <span className=" font-bold text-2xl">Integridad:</span> Actuar
+              con honestidad, transparencia y ética en todas nuestras
               operaciones.
             </li>
             <li>
-              <span className=" font-bold text-2xl">Innovación:</span>{" "}
-              Fomentar la creatividad y la innovación para impulsar el progreso.
+              <span className=" font-bold text-2xl">Innovación:</span> Fomentar
+              la creatividad y la innovación para impulsar el progreso.
             </li>
             <li>
-              <span className=" font-bold text-2xl">
-                Colaboración:
-              </span>{" "}
+              <span className=" font-bold text-2xl">Colaboración:</span>{" "}
               Trabajar en equipo y fomentar relaciones sólidas con clientes y
               socios.
             </li>
             <li>
-              <span className=" font-bold text-2xl">
-                Sostenibilidad:
-              </span>{" "}
+              <span className=" font-bold text-2xl">Sostenibilidad:</span>{" "}
               Contribuir positivamente al entorno social y medioambiental.
             </li>
           </ol>

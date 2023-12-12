@@ -11,7 +11,7 @@ const Download: React.FC = () => {
       <a
         href="#"
         onClick={handleDownload}
-        className="bg-blue-500 text-white font-semibold transition-transform duration-300 transform hover:scale-110 py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        className="bg-white text-black font-semibold transition-transform duration-300 transform hover:scale-110 py-2 px-4 rounded"
       >
         Ver catalogo
       </a>
