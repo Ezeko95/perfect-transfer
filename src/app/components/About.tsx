@@ -1,5 +1,4 @@
 import React from "react";
-import Animation from "./Animation";
 
 interface AboutUsProps {
   sectionRef1: React.RefObject<HTMLDivElement>;
@@ -21,7 +20,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
             excepcional que impulse su éxito.
           </p>
         </div>
-       
+
         <div className="">
           <img src="/prueba.jpg" width={"620"} alt="prueba" />
         </div>
