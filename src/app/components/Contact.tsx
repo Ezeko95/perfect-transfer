@@ -53,7 +53,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
     setContactForm({ ...contactForm, [e.target.name]: e.target.value });
   };
   return (
-    <div id="contact" ref={sectionRef3} className="flex flex-col h-fit pt-20 ">
+    <div id="contact" ref={sectionRef3} className="flex flex-col justify-center min-h-screen">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-garamond text-7xl font-bold mb-5">
           Ponete en contacto

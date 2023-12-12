@@ -15,11 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className="scroll-smooth"
-      style={{ scrollBehavior: "smooth" }}
-    >
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/logo-miniatura.png" sizes="logo" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

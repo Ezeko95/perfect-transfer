@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "../globals.css";
 
 interface AboutUsProps {
   sectionRef1: React.RefObject<HTMLDivElement>;
 }
 const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
+  const [scrollY, setScrollY] = useState(0);
+
+  const logit = () => {
+    setScrollY(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    function watchScroll() {
+      window.addEventListener("scroll", logit);
+    }
+    watchScroll();
+    return () => {
+      window.removeEventListener("scroll", logit);
+    };
+  });
+  console.log(scrollY);
   return (
     <div className="font-garamond " id="about" ref={sectionRef1}>
       <div className="flex flex-row items-center justify-center px-36 py-12">
-        <div>
+        <div className={` ${scrollY > 0 ? "slide-in-right" : ""}`}>
           <h2 className="text-4xl font-garamond font-light italic text-white py-4 px-6 rounded-t-sm max-w-sm bg-gray-900">
             Misión
           </h2>
@@ -21,12 +38,12 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           </p>
         </div>
 
-        <div className="">
+        <div className={` ${scrollY > 0 ? "slide-in-right" : ""}`}>
           <img src="/prueba.jpg" width={"620"} alt="prueba" />
         </div>
       </div>
       <div className="flex flex-row-reverse items-center justify-center px-36 py-12 gap-x-20">
-        <div>
+        <div className={` ${scrollY > 636 ? "slide-in-right" : ""}`}>
           <h2 className="text-4xl max-w-sm font-garamond font-light italic text-white py-4 px-6 rounded-t-sm bg-gray-900">
             Nuestra visión
           </h2>
@@ -38,12 +55,12 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
             catalizador de la innovación en la industria de impresión gráfica.
           </p>
         </div>
-        <div className="">
+        <div className={` ${scrollY > 636 ? "slide-in-right" : ""}`}>
           <img src="/prueba2.jpg" alt="prueba2" width={"620"} />
         </div>
       </div>
       <div className="flex flex-row items-center justify-center px-36 py-12 gap-x-20">
-        <div className="">
+        <div className={` ${scrollY > 1139 ? "slide-in-right" : ""}`}>
           <h2 className="text-4xl max-w-sm font-garamond font-light italic py-4 px-6 text-white bg-gray-900 rounded-t-sm">
             Objetivos
           </h2>
@@ -75,12 +92,12 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
             </li>
           </ol>
         </div>
-        <div className="">
+        <div className={` ${scrollY > 1139 ? "slide-in-right" : ""}`}>
           <img src="/prueba3.jpg" alt="prueba3" width={"620"} />
         </div>
       </div>
       <div className="flex flex-row-reverse justify-center items-center px-36 py-5 gap-x-20">
-        <div className="">
+        <div className={` ${scrollY > 1739 ? "slide-in-right" : ""}`}>
           <h2 className="text-4xl max-w-sm font-garamond font-light italic py-4 px-6 text-white bg-gray-900 rounded-t-sm">
             Valores
           </h2>
@@ -110,7 +127,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
             </li>
           </ol>
         </div>
-        <div className="">
+        <div className={` ${scrollY > 1739 ? "slide-in-right" : ""}`}>
           <img src="/prueba4.jpg" alt="prueba4" width={"620"} />
         </div>
       </div>
