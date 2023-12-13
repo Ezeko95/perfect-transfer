@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   const sectionRef3 = useRef<HTMLDivElement>(null);
 
   return (
-    <div>
+    <div >
       <NavBar />
       <Header />
       <Products sectionRef2={sectionRef2} />

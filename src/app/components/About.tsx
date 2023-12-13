@@ -22,7 +22,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
   });
   console.log(scrollY);
   return (
-    <div className="font-garamond " id="about" ref={sectionRef1}>
+    <div className="font-garamond" id="about" ref={sectionRef1}>
       <div className="flex flex-row items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div className={` ${scrollY > 1309 ? "slide-in-right" : ""}`}>
           <h2 className="text-4xl font-garamond font-light italic text-white py-4 px-6 rounded-t-sm max-w-sm bg-green-700">
@@ -130,6 +130,9 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           <img src="/prueba4.jpg" alt="prueba4" width={"620"} />
         </div>
       </div> */}
+      <div className="flex justify-center">
+        <hr className="border-[1px] border-black w-4/5" />
+      </div>
     </div>
   );
 };

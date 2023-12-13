@@ -9,7 +9,7 @@ const Download: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center pb-16 bg-gray-900">
+    <div className="flex justify-center pb-16 bg-white">
       <a
         onClick={handleDownload}
         className="bg-green-700 text-white font-garamond font-extrabold text-2xl transition-transform duration-300 transform hover:scale-110 py-4 px-6 rounded-md"
@@ -29,7 +29,7 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
     <div
       id="product"
       ref={sectionRef2}
-      className="flex flex-col justify-center items-center min-w-screen min-h-screen bg-gray-900 "
+      className="flex flex-col justify-center items-center min-w-screen min-h-screen"
     >
       <div className="flex flex-row flex-wrap max-w-7xl justify-center pt-20 pb-20 gap-10 ">
         {productCategories.map((category: ProductCategory) => (
@@ -37,6 +37,7 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
         ))}
       </div>
       <Download />
+      <hr className="border-[1px] border-black w-4/5" />
     </div>
   );
 };

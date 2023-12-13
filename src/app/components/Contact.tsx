@@ -110,7 +110,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
             className="mb-20 border-gray-600 hover:bg-green-700 text-black font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded"
             type="submit"
           >
-            Submit
+            Enviar
           </button>
         </form>
         {submissionStatus === true && (
