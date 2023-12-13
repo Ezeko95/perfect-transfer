@@ -11,8 +11,8 @@ const Home: React.FC = () => {
     <div>
       <NavBar />
       <Header />
-      <About sectionRef1={sectionRef1} />
       <Products sectionRef2={sectionRef2} />
+      <About sectionRef1={sectionRef1} />
       <Contact sectionRef3={sectionRef3} />
       <Footer />
     </div>

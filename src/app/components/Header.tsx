@@ -18,10 +18,10 @@ const Header: React.FC = () => {
         </div>
         <div className="flex justify-center font-garamond">
           <a
-            href="#about"
+            href="#product"
             className="text-black bg-white px-5 py-2 transition-transform transform hover:scale-110 rounded-sm text-2xl font-bold inline-block shadow-r-md"
           >
-            Sobre Nosotros
+            Productos
           </a>
           <span className="mx-10" />
           <a

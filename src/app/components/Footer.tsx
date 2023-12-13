@@ -1,4 +1,5 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -23,7 +24,10 @@ const Footer: React.FC = () => {
                   <a>8:30 - 17:00 hs</a>
                 </li>
                 <li>
-                  <a>11-5053-9020</a>
+                  <a className="flex flex-row items-center gap-x-1">
+                    11-5053-9020
+                    <FaWhatsapp />
+                  </a>
                 </li>
               </ul>
             </div>

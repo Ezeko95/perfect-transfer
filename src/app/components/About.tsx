@@ -58,7 +58,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           <img src="/prueba2.jpg" alt="prueba2" width={"620"} />
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
+      {/* <div className="flex flex-row items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div className={` ${scrollY > 1139 ? "slide-in-right" : ""}`}>
           <h2 className="text-4xl max-w-sm font-garamond font-light italic py-4 px-6 text-white bg-green-700 rounded-t-sm">
             Objetivos
@@ -129,7 +129,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
         <div className={` ${scrollY > 1739 ? "slide-in-left" : ""}`}>
           <img src="/prueba4.jpg" alt="prueba4" width={"620"} />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
