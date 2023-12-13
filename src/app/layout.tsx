@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
+import PrivacyConsentBanner from "./components/PrivacyBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <Script
-          src={`https://cdn-cookieyes.com/client_data/a3e743aa4204cc4a0e49eeb5/script.js`}
-          strategy="beforeInteractive"
-        ></Script>
         <link rel="icon" href="/logo-miniatura.png" sizes="logo" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -40,6 +36,7 @@ export default function RootLayout({
         />
       </head>
       <body>{children}</body>
+      <PrivacyConsentBanner />
     </html>
   );
 }

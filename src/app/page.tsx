@@ -8,11 +8,11 @@ const Home: React.FC = () => {
   const sectionRef3 = useRef<HTMLDivElement>(null);
 
   return (
-    <div >
+    <div>
       <NavBar />
       <Header />
-      <Products sectionRef2={sectionRef2} />
       <About sectionRef1={sectionRef1} />
+      <Products sectionRef2={sectionRef2} />
       <Contact sectionRef3={sectionRef3} />
       <Footer />
     </div>
