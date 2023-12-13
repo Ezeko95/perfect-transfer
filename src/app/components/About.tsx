@@ -22,7 +22,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
   });
   return (
     <div className="font-garamond " id="about" ref={sectionRef1}>
-      <div className="flex flex-row items-center justify-center px-36 py-12">
+      <div className="flex flex-row items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div className={` ${scrollY > 0 ? "slide-in-right" : ""}`}>
           <h2 className="text-4xl font-garamond font-light italic text-white py-4 px-6 rounded-t-sm max-w-sm bg-green-700">
             Misión
@@ -41,7 +41,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           <img src="/prueba.jpg" width={"620"} alt="prueba" />
         </div>
       </div>
-      <div className="flex flex-row-reverse items-center justify-center px-36 py-12 gap-x-20">
+      <div className="flex flex-row-reverse items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div className={` ${scrollY > 636 ? "slide-in-left" : ""}`}>
           <h2 className="text-4xl max-w-sm font-garamond font-light italic text-white py-4 px-6 rounded-t-sm bg-green-700">
             Nuestra visión
@@ -58,12 +58,12 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           <img src="/prueba2.jpg" alt="prueba2" width={"620"} />
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center px-36 py-12 gap-x-20">
+      <div className="flex flex-row items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div className={` ${scrollY > 1139 ? "slide-in-right" : ""}`}>
           <h2 className="text-4xl max-w-sm font-garamond font-light italic py-4 px-6 text-white bg-green-700 rounded-t-sm">
             Objetivos
           </h2>
-          <ol className="text-xl text-justify font-light max-w-7xl pt-8 text-blacklist-disc">
+          <ol className="text-xl text-left md:text-justify font-light max-w-7xl pt-8 text-blacklist-disc">
             <li>
               <span className=" font-bold text-2xl">
                 Excelencia en la calidad:
@@ -95,12 +95,12 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           <img src="/prueba3.jpg" alt="prueba3" width={"620"} />
         </div>
       </div>
-      <div className="flex flex-row-reverse justify-center items-center px-36 py-5 gap-x-20">
+      <div className="flex flex-row-reverse justify-center items-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div className={` ${scrollY > 1739 ? "slide-in-left" : ""}`}>
           <h2 className="text-4xl max-w-sm font-garamond font-light italic py-4 px-6 text-white bg-green-700 rounded-t-sm">
             Valores
           </h2>
-          <ol className="text-black text-justify font-garamond text-xl py-8 max-w-6xl rounded-b-sm rounded-l-sm">
+          <ol className="text-black text-left md:text-left lg:text-justify font-garamond text-xl py-8 max-w-6xl rounded-b-sm rounded-l-sm">
             <li>
               <span className=" font-bold text-2xl">Calidad:</span>{" "}
               Comprometidos con la excelencia en la calidad de nuestros
