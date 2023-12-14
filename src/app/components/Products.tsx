@@ -25,7 +25,7 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
       ref={sectionRef2}
       className="flex flex-col justify-center items-center min-w-screen min-h-screen"
     >
-      <div className="flex flex-row flex-wrap max-w-7xl justify-center pt-20 pb-20 gap-10 ">
+      <div className="flex flex-row flex-wrap max-w-7xl justify-center py-10 gap-10 ">
         {productCategories.map((category: ProductCategory) => (
           <ProductCard
             key={category.id}
@@ -34,13 +34,15 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
           />
         ))}
       </div>
-      <a
-        onClick={() => window.open("/catalogo.pdf", "_blank")}
-        className="inline-flex items-center gap-x-2 bg-green-700 text-white font-garamond font-extrabold text-2xl transition-transform duration-300 transform hover:scale-110 py-4 px-6 rounded-md mb-20"
-      >
-        <FaFilePdf />Ver catálogo
-      </a>
-      <hr className="border-[1px] border-black w-4/5" />
+      <div className="flex items-center justify-center">
+        <a
+          onClick={() => window.open("/catalogo.pdf", "_blank")}
+          className="inline-flex items-center gap-x-2 mt-10 bg-green-700 text-white font-garamond font-extrabold text-2xl transition-transform duration-300 transform hover:scale-110 py-4 px-6 rounded-md mb-20"
+        >
+          <FaFilePdf />
+          Ver catálogo
+        </a>
+      </div>
       {selectedProduct && (
         <ProductDetail
           product={selectedProduct}

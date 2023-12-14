@@ -57,9 +57,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           <img src="/prueba2.jpg" alt="prueba2" width={"620"} />
         </div>
       </div>
-      <div className="flex justify-center">
-        <hr className="border-[1px] border-black w-4/5" />
-      </div>
+      
     </div>
   );
 };
