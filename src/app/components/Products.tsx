@@ -1,24 +1,7 @@
 import React, { useState } from "react";
 import { ProductCategory, productCategories } from "../../assets/products";
 import { ProductDetail, ProductCard } from ".";
-
-const Download: React.FC = () => {
-  const handleDownload = () => {
-    const fileUrl = "/catalogo.pdf";
-    window.open(fileUrl, "_blank");
-  };
-
-  return (
-    <div className="flex justify-center pb-16 bg-white">
-      <a
-        onClick={handleDownload}
-        className="bg-green-700 text-white font-garamond font-extrabold text-2xl transition-transform duration-300 transform hover:scale-110 py-4 px-6 rounded-md"
-      >
-        Ver catálogo
-      </a>
-    </div>
-  );
-};
+import { FaFilePdf } from "react-icons/fa6";
 
 interface ProductsProps {
   sectionRef2: React.RefObject<HTMLDivElement>;
@@ -51,7 +34,12 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
           />
         ))}
       </div>
-      <Download />
+      <a
+        onClick={() => window.open("/catalogo.pdf", "_blank")}
+        className="inline-flex items-center gap-x-2 bg-green-700 text-white font-garamond font-extrabold text-2xl transition-transform duration-300 transform hover:scale-110 py-4 px-6 rounded-md mb-20"
+      >
+        <FaFilePdf />Ver catálogo
+      </a>
       <hr className="border-[1px] border-black w-4/5" />
       {selectedProduct && (
         <ProductDetail

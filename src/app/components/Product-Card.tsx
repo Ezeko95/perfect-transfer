@@ -15,7 +15,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ category, openDetailsModal })
           {category.name}
         </h5>
         <p className="mb-2 font-garamond font-semibold text-gray-700">
-          {category.description}
+          {/* {category.description} */}
         </p>
         <button
           onClick={() => openDetailsModal(category)}

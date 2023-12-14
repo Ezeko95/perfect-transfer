@@ -20,7 +20,6 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
       window.removeEventListener("scroll", logit);
     };
   }, []);
-  console.log(scrollY);
   return (
     <div className="font-garamond" id="about" ref={sectionRef1}>
       <div className="flex flex-row items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
