@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { ProductCategory, productCategories } from "../../assets/products";
-import ProductCard from "./Product-Card";
+import { ProductDetail, ProductCard } from ".";
 
 const Download: React.FC = () => {
   const handleDownload = () => {
@@ -25,6 +25,17 @@ interface ProductsProps {
 }
 
 const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
+  const [selectedProduct, setSelectedProduct] =
+    useState<ProductCategory | null>(null);
+
+  const openDetailsModal = (product: ProductCategory) => {
+    setSelectedProduct(product);
+  };
+
+  const closeDetailsModal = () => {
+    setSelectedProduct(null);
+  };
+
   return (
     <div
       id="product"
@@ -33,11 +44,21 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
     >
       <div className="flex flex-row flex-wrap max-w-7xl justify-center pt-20 pb-20 gap-10 ">
         {productCategories.map((category: ProductCategory) => (
-          <ProductCard key={category.id} category={category} />
+          <ProductCard
+            key={category.id}
+            category={category}
+            openDetailsModal={openDetailsModal}
+          />
         ))}
       </div>
       <Download />
       <hr className="border-[1px] border-black w-4/5" />
+      {selectedProduct && (
+        <ProductDetail
+          product={selectedProduct}
+          closeModal={closeDetailsModal}
+        />
+      )}
     </div>
   );
 };
