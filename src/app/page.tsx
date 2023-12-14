@@ -1,6 +1,13 @@
 "use client";
 import React, { useRef } from "react";
-import { About, Contact, Footer, Header, NavBar, Products } from "./components";
+import {
+  About,
+  Contact,
+  Footer,
+  Landing,
+  Header,
+  Products,
+} from "./components";
 
 const Home: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
@@ -8,11 +15,13 @@ const Home: React.FC = () => {
   const sectionRef3 = useRef<HTMLDivElement>(null);
 
   return (
-    <div>
-      <NavBar />
+    <div >
       <Header />
+      <Landing />
       <About sectionRef1={sectionRef1} />
+      <hr className="border-[1px] border-black w-4/5 my-10 " />
       <Products sectionRef2={sectionRef2} />
+      <hr className="border-[1px] border-black w-4/5" />
       <Contact sectionRef3={sectionRef3} />
       <Footer />
     </div>
