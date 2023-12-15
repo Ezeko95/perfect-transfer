@@ -9,6 +9,7 @@ export interface IProductSubcategory {
 export interface ProductCategory {
   id: number;
   name: string;
+  description: string;
   subcategory: IProductSubcategory[];
   image: string;
 }
@@ -17,6 +18,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: 1,
     name: "Papeles",
+    description:
+      "Papeles para impresión digital en gran formato, para interiores y exteriores, con diferentes pesos y medidas.",
     subcategory: [
       {
         id: 1,
@@ -46,6 +49,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: 3,
     name: "Vinilos",
+    description:
+      "Vinilos versátiles y de alta adherencia para aplicaciones gráficas variadas.",
     subcategory: [
       {
         id: 1,
@@ -67,18 +72,19 @@ export const productCategories: ProductCategory[] = [
   {
     id: 2,
     name: "Lonas",
+    description: "Lonas para impresión digital en gran formato.",
     subcategory: [
       {
         id: 1,
-        label: "Lona Front Base Blanca",
-        weight: "440 g/m2 (13 oz/sq yd), 500 x 500, 9x9",
+        label: "Lona Front Blanca (500 x 500)",
+        weight: "440 g/m2 (13 oz/sq yd), 9x9",
         measures: ["1.10x50m"],
         file: "/LonaFront.pdf",
       },
       {
         id: 2,
-        label: "Lona Front Base Blanca",
-        weight: "440 g/m2 (13 oz/sq yd), 300 x 500, 18x12",
+        label: "Lona Front Blanca (300 x 500)",
+        weight: "440 g/m2 (13 oz/sq yd), 18x12",
         measures: ["1,37 x 50m", "1,52 x 50m"],
         file: "/LonaFront.pdf",
       },
@@ -88,6 +94,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: 5,
     name: "PET",
+    description:
+      "Láminas de PET de alta transparencia y resistencia, perfectas para impresión en alta definición, con aplicaciones en displays, embalajes y exhibidores.",
     subcategory: [
       {
         id: 1,
@@ -102,6 +110,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: 6,
     name: "Algodón",
+    description:
+      "Nuestros productos de tela flag y canvas ofrecen una base de algodón de alta calidad para impresiones artísticas o publicitarias.",
     subcategory: [
       {
         id: 1,
@@ -123,6 +133,8 @@ export const productCategories: ProductCategory[] = [
   {
     id: 7,
     name: "Exhibidores",
+    description:
+      "Soluciones de exhibición innovadoras y personalizadas para destacar productos y mensajes.",
     subcategory: [
       {
         id: 1,
