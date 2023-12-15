@@ -92,12 +92,21 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
                     <span className="underline">Peso</span>:{" "}
                     <span className="text-gray-600">{detail.weight}</span>
                   </p>
-                  {detail.measures.map((measure, i) => (
-                    <p className="text-lg" key={i}>
-                      <span className="underline">Medidas</span>:{" "}
-                      <span className="text-gray-600">{measure}</span>
-                    </p>
-                  ))}
+                  <div className="text-lg">
+                    <label className="underline" htmlFor="measurementDropdown">
+                      Medidas:
+                    </label>
+                    <select
+                      id="measurementDropdown"
+                      className="text-gray-600 border-none rounded-md p-1 ml-2 focus:border-none"
+                    >
+                      {detail.measures.map((measure, i) => (
+                        <option key={i} value={measure}>
+                          {measure}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                   <a
                     onClick={() => {
                       window.open(detail.file || "", "_blank");
