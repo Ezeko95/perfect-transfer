@@ -34,7 +34,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
       <div className=" bg-white bg-opacity-50 shadow-2xl backdrop-blur rounded-md px-16 py-10 font-garamond">
         <div className="flex flex-row justify-between">
-          <h2 className="text-4xl font-bold ">{product.name}</h2>
+          <h2 className="text-4xl ">{product.name}</h2>
           <button
             onClick={closeModal}
             className="flex items-center justify-center w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-md text-gray-900 focus:outline-none transform transition-transform hover:scale-110"
@@ -70,7 +70,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
                 className="p-2 cursor-pointer flex flex-row justify-between items-center"
                 onClick={() => handleAccordionClick(index)}
               >
-                <h3 className="text-2xl font-bold">{detail.label}</h3>
+                <h3 className="text-2xl ">{detail.label}</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"

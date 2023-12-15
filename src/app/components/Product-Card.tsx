@@ -12,7 +12,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div className="flex items-center flex-col max-w-xs bg-white rounded-t-md shadow-xl transition-transform transform duration-500 hover:scale-110 hover:shadow-2xl">
-      <img src={category.image} alt="product" className="rounded-t-md" />
+      <img src={category.image} alt="product" className="rounded-t-md max-w-full" />
       <div className="flex flex-col justify-between h-full p-5">
         <div className="flex flex-col items-start">
           <h5 className="mb-2 text-2xl font-garamond font-bold tracking-tight text-gray-900">
