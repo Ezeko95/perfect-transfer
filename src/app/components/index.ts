@@ -1,4 +1,3 @@
-import PrivacyConsentBanner from "./PrivacyBanner";
 import ProductDetail from "./ProductDetail";
 import ProductCard from "./Product-Card";
 import Products from "./Products";
@@ -19,5 +18,4 @@ export {
   Products,
   ProductCard,
   ProductDetail,
-  PrivacyConsentBanner,
 };
