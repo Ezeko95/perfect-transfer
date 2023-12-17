@@ -25,7 +25,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <div className="mt-auto">
           <button
             onClick={() => openDetailsModal(category)}
-            className="inline-flex items-center px-3 py-1 text-lg font-garamond font-bold text-center text-white bg-green-700 rounded-md hover:bg-gray-400 hover:text-black"
+            className="inline-flex items-center px-3 py-1 text-lg font-garamond font-bold text-center text-white bg-green-700 rounded-sm hover:bg-gray-400 hover:text-black"
           >
             Ver más
           </button>

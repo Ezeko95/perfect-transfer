@@ -32,12 +32,12 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
 
   return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
-      <div className=" bg-white bg-opacity-50 shadow-2xl backdrop-blur rounded-md px-16 py-10 font-garamond">
+      <div className=" bg-white bg-opacity-50 shadow-2xl backdrop-blur rounded-sm px-16 py-10 font-garamond">
         <div className="flex flex-row justify-between">
           <h2 className="text-4xl ">{product.name}</h2>
           <button
             onClick={closeModal}
-            className="flex items-center justify-center w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-md text-gray-900 focus:outline-none transform transition-transform hover:scale-110"
+            className="flex items-center justify-center w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-sm text-gray-900 focus:outline-none transform transition-transform hover:scale-110"
           >
             <svg
               className="w-6 h-6"
@@ -58,12 +58,12 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
         <img
           src={product.image}
           alt={product.name}
-          className="h-80 w-fit mt-4 rounded-lg"
+          className="h-80 w-fit mt-4 rounded-sm"
         />
         <div>
           {details.map((detail: IProductSubcategory, index: number) => (
             <div
-              className="border rounded-md overflow-hidden mt-2 bg-white"
+              className="overflow-hidden bg-white"
               key={detail.id}
             >
               <div
@@ -87,7 +87,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
                 </svg>
               </div>
               {activeIndex === index && (
-                <div className="p-2">
+                <div className="p-2 border-b-2">
                   <p className="text-lg ">
                     <span className="underline">Peso</span>:{" "}
                     <span className="text-gray-600">{detail.weight}</span>
@@ -98,7 +98,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
                     </label>
                     <select
                       id="measurementDropdown"
-                      className="text-gray-600 border-none rounded-md p-1 ml-2 focus:border-none"
+                      className="text-gray-600 border-none rounded-sm p-1 ml-2 focus:border-none"
                     >
                       {detail.measures.map((measure, i) => (
                         <option key={i} value={measure}>
@@ -111,7 +111,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
                     onClick={() => {
                       window.open(detail.file || "", "_blank");
                     }}
-                    className="inline-flex items-center gap-2 px-3 py-2 mt-4 text-lg font-garamond font-bold text-center text-white bg-green-800 rounded-md transform transition-transform hover:scale-110"
+                    className="inline-flex items-center gap-2 px-3 py-2 mt-4 text-lg font-garamond font-bold text-center text-white bg-green-800 rounded-sm transform transition-transform hover:scale-110"
                   >
                     <FaFilePdf />
                     Ficha Técnica
