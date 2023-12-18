@@ -19,9 +19,7 @@ const Home: React.FC = () => {
       <Header />
       <Landing />
       <About sectionRef1={sectionRef1} />
-      <hr className="border-[1px] border-black w-4/5 my-10 " />
       <Products sectionRef2={sectionRef2} />
-      <hr className="border-[1px] border-black w-4/5" />
       <Contact sectionRef3={sectionRef3} />
       <Footer />
     </div>
