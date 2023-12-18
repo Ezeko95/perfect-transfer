@@ -47,7 +47,7 @@ export const productCategories: ProductCategory[] = [
   },
 
   {
-    id: 3,
+    id: 2,
     name: "Vinilos",
     description:
       "Vinilos versátiles y de alta adherencia para aplicaciones gráficas variadas.",
@@ -61,16 +61,44 @@ export const productCategories: ProductCategory[] = [
       },
       {
         id: 2,
-        label: "Vinilo Base Gris",
+        label: "Vinilo Clear 60",
+        weight: "60mic",
+        measures: ["1.27x50m", "1.52x50m"],
+        file: "/ViniloGris.pdf",
+      },
+      {
+        id: 3,
+        label: "Vinilo Clear 80",
         weight: "80mic",
-        measures: ["1.07x50m", "1.27x50m", "1.37x50m", "1.52x50m"],
+        measures: ["1.07x50m", "1.27x50m", "1.52x50m"],
+        file: "/ViniloGris.pdf",
+      },
+      {
+        id: 4,
+        label: "Vinilo Microperforado",
+        weight: null,
+        measures: ["1.07x50m", "1.37x50m", "1.52x50m"],
+        file: "/ViniloGris.pdf",
+      },
+      {
+        id: 5,
+        label: "Vinilo Piso 200mic",
+        weight: null,
+        measures: ["1.27x50m", "1.37x50m", "1.52x50m"],
+        file: "/ViniloGris.pdf",
+      },
+      {
+        id: 6,
+        label: "Vinilo Estático 150mic (Blanco/Transparente)",
+        weight: null,
+        measures: ["1.27x50m"],
         file: "/ViniloGris.pdf",
       },
     ],
     image: "vinilo.png",
   },
   {
-    id: 2,
+    id: 3,
     name: "Lonas",
     description: "Lonas para impresión digital en gran formato.",
     subcategory: [
@@ -85,7 +113,35 @@ export const productCategories: ProductCategory[] = [
         id: 2,
         label: "Lona Front Blanca (300 x 500)",
         weight: "440 g/m2 (13 oz/sq yd), 18x12",
-        measures: ["1,37 x 50m", "1,52 x 50m"],
+        measures: ["1.37x50m", "1.52x50m"],
+        file: "/LonaFront.pdf",
+      },
+      {
+        id: 3,
+        label: "Lona Backlit",
+        weight: "440 g/m2 (13 oz/sq yd), 300x500, 18x12",
+        measures: [
+          "1.00x50m",
+          "1.52x50m",
+          "1.60x50m",
+          "1.85x50m",
+          "2.50x50m",
+          "3.20x50m",
+        ],
+        file: "/LonaFront.pdf",
+      },
+      {
+        id: 4,
+        label: "Lona Blackout",
+        weight: "510 g/m2 (13 oz/sq yd), 200x200, 18x12",
+        measures: ["1.10x50m", "1.37x50m", "1.60x50m", "2.50x50m", "3.20x50m"],
+        file: "/LonaFront.pdf",
+      },
+      {
+        id: 5,
+        label: "Lona Mesh con Liner",
+        weight: "260 g/m2 (13 oz/sq yd), 1000x1000, 18x12",
+        measures: ["1.60x50m", "2.50x50m", "3.20x50m"],
         file: "/LonaFront.pdf",
       },
     ],
@@ -145,5 +201,63 @@ export const productCategories: ProductCategory[] = [
       },
     ],
     image: "roll-up.png",
+  },
+  {
+    id: 8,
+    name: "Montaje",
+    description:
+      "Productos de montaje para aplicaciones de impresión digital en gran formato.",
+    subcategory: [
+      {
+        id: 1,
+        label: "PCV Espumado Blanco",
+        weight: "50-80 gr/cm2",
+        measures: [
+          "1mm | 1.22x2.44",
+          "2mm | 1.22x2.44",
+          "3mm | 1.22x2.44",
+          "5mm | 1.22x2.44",
+        ],
+        file: "",
+      },
+      {
+        id: 2,
+        label: "Cinta Doble Faz",
+        weight: null,
+        measures: ["1.07x50m", "1.30x50m"],
+        file: "",
+      },
+      {
+        id: 3,
+        label: "Posicionador",
+        weight: "40 gr/m2",
+        measures: ["0.60x50m", "1.22x50m"],
+        file: "",
+      },
+    ],
+    image: "montaje.png",
+  },
+  {
+    id: 9,
+    name: "Papel Transfer",
+    description:
+      "Papel transfer para ropa oscura y clara, con impresión en espejo.",
+    subcategory: [
+      {
+        id: 1,
+        label: "Para Prendas Oscuras de Algodón",
+        weight: null,
+        measures: ["A3", "A4"],
+        file: "",
+      },
+      {
+        id: 2,
+        label: "Multiple Superficies",
+        weight: null,
+        measures: ["Carta"],
+        file: "",
+      },
+    ],
+    image: "Papel-transfer.png",
   },
 ];

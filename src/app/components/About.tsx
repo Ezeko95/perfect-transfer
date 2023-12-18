@@ -1,29 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../globals.css";
 
 interface AboutUsProps {
   sectionRef1: React.RefObject<HTMLDivElement>;
 }
 const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
-  const [scrollY, setScrollY] = useState(0);
-
-  const logit = () => {
-    setScrollY(window.pageYOffset);
-  };
+  const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    function watchScroll() {
-      window.addEventListener("scroll", logit);
-    }
-    watchScroll();
-    return () => {
-      window.removeEventListener("scroll", logit);
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
     };
-  }, []);
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        observer.disconnect();
+      }
+    }, options);
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, [componentRef]);
+  console.log(isVisible);
   return (
     <div className="font-garamond" id="about" ref={sectionRef1}>
       <div className="flex flex-row items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
-        <div className={` ${scrollY > 350 ? "slide-in-right" : ""}`}>
+        <div
+          className={` ${!isVisible ? "" : "slide-in-right"}`}
+          ref={componentRef}
+        >
           <h2 className="text-4xl font-garamond font-light italic text-white py-4 px-6 rounded-t-sm max-w-sm bg-green-700">
             Misión
           </h2>
@@ -36,12 +51,18 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
             excepcional que impulse su éxito.
           </p>
         </div>
-        <div className={` ${scrollY > 350 ? "slide-in-right" : ""}`}>
+        <div
+          className={` ${!isVisible ? "" : "slide-in-right"}`}
+          ref={componentRef}
+        >
           <img src="/prueba.jpg" width={"620"} alt="prueba" />
         </div>
       </div>
       <div className="flex flex-row-reverse items-center justify-center px-10 py-8 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
-        <div className={` ${scrollY > 745 ? "slide-in-left" : ""}`}>
+        <div
+          className={` ${!isVisible ? "" : "slide-in-right"}`}
+          ref={componentRef}
+        >
           <h2 className="text-4xl max-w-sm font-garamond font-light italic text-white py-4 px-6 rounded-t-sm bg-green-700">
             Nuestra visión
           </h2>
@@ -53,11 +74,13 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
             catalizador de la innovación en la industria de impresión gráfica.
           </p>
         </div>
-        <div className={` ${scrollY > 745 ? "slide-in-left" : ""}`}>
+        <div
+          className={` ${!isVisible ? "" : "slide-in-right"}`}
+          ref={componentRef}
+        >
           <img src="/prueba2.jpg" alt="prueba2" width={"620"} />
         </div>
       </div>
-      
     </div>
   );
 };
