@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ProductCategory, productCategories } from "../../assets/products";
 import { ProductDetail, ProductCard } from ".";
 import { FaFilePdf } from "react-icons/fa6";
@@ -8,24 +8,41 @@ interface ProductsProps {
 }
 
 const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
+  const [blockScroll, setBlockScroll] = useState<boolean>(false);
   const [selectedProduct, setSelectedProduct] =
     useState<ProductCategory | null>(null);
 
   const openDetailsModal = (product: ProductCategory) => {
     setSelectedProduct(product);
+    setBlockScroll(true);
   };
 
   const closeDetailsModal = () => {
     setSelectedProduct(null);
+    setBlockScroll(false);
   };
+
+  useEffect(() => {
+    if (blockScroll) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [blockScroll]);
 
   return (
     <div
       id="product"
       ref={sectionRef2}
-      className="flex flex-col justify-center items-center min-w-screen min-h-screen"
+      className={`flex flex-col justify-center items-center min-w-screen ${
+        blockScroll ? "overflow-hidden" : ""
+      }`}
     >
-      <div className="flex flex-row flex-wrap max-w-7xl justify-center py-10 gap-10 ">
+      <div className="grid grid-cols-4 max-w-8xl justify-center py-10 gap-10">
         {productCategories.map((category: ProductCategory) => (
           <ProductCard
             key={category.id}

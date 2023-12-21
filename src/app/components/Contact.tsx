@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 interface ContactProps {
@@ -5,15 +6,9 @@ interface ContactProps {
 }
 
 const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [phone, setPhone] = useState("");
-  const [comment, setComment] = useState("");
   const [submissionStatus, setSubmissionStatus] = useState<boolean | string>(
     false
   );
-
   const [contactForm, setContactForm] = useState({
     name: "",
     email: "",
@@ -53,7 +48,11 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
     setContactForm({ ...contactForm, [e.target.name]: e.target.value });
   };
   return (
-    <div id="contact" ref={sectionRef3} className="flex flex-col justify-center min-h-screen">
+    <div
+      id="contact"
+      ref={sectionRef3}
+      className="flex flex-col justify-center min-h-screen"
+    >
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-garamond text-7xl font-bold mb-5">
           Ponete en contacto
@@ -107,6 +106,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           />
           <br />
           <button
+            id="submit"
             className="mb-20 border-gray-600 hover:bg-green-700 text-black font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded"
             type="submit"
           >
