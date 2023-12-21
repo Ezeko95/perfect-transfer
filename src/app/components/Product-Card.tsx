@@ -12,7 +12,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <>
-      <div className="flex items-center flex-col py-10 max-w-xs bg-white rounded-t-md shadow-xl transition-transform transform duration-500 hover:scale-110 hover:shadow-2xl">
+      <div className="flex items-center flex-col max-w-xs bg-white rounded-t-md shadow-xl transition-transform transform duration-500 hover:scale-110 hover:shadow-2xl">
         <img
           src={category.image}
           alt="product"
