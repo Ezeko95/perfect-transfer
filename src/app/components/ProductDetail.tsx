@@ -1,6 +1,6 @@
 import { ProductCategory, IProductSubcategory } from "../../assets/products";
 import { FaFilePdf } from "react-icons/fa6";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 interface ProductDetailProps {
   product: ProductCategory;
@@ -18,16 +18,11 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const handleDownload = () => {
-    const fileUrl = details.map((detail) => detail.file);
-    window.open(fileUrl.join(), "_blank");
-  };
-
   return (
     <div className="fixed top-0 left-0 w-full min-h-screen max-h-fit flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
-      <div className=" bg-white bg-opacity-50 shadow-2xl max-h-fit min-h-fit backdrop-blur rounded-sm px-16 py-10 font-garamond ">
+      <div className=" bg-white bg-opacity-50 shadow-2xl max-h-fit min-h-fit backdrop-blur rounded-md px-16 py-10 font-garamond ">
         <div className="flex flex-row justify-between">
-          <h2 className="text-4xl ">{product.name}</h2>
+          <h2 className="text-3xl text-white">{product.name}</h2>
           <button
             onClick={closeModal}
             className="flex items-center justify-center w-8 h-8 bg-green-700 hover:bg-gray-300 rounded-sm text-white focus:outline-none transform transition-transform hover:scale-110"
@@ -51,17 +46,17 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
         <img
           src={product.image}
           alt={product.name}
-          className="h-80 w-fit mt-4 rounded-sm mb-4"
+          className="h-80 w-fit mt-4 rounded-sm"
         />
         <div>
-          <div className="bg-gray-300 overflow-hidden overflow-y-scroll max-h-60">
+          <div className="bg-gray-300 overflow-hidden overflow-y-scroll max-h-70 rounded-sm">
             {details.map((detail: IProductSubcategory, index: number) => (
               <div className="bg-white p-2" key={detail.id}>
                 <div
-                  className="p-2 cursor-pointer flex flex-row justify-between items-center"
+                  className=" cursor-pointer flex flex-row justify-between items-center"
                   onClick={() => handleAccordionClick(index)}
                 >
-                  <h3 className="text-2xl">{detail.label}</h3>
+                  <h3 className="text-xl">{detail.label}</h3>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
