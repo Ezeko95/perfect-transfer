@@ -85,7 +85,7 @@ export const productCategories: ProductCategory[] = [
         label: "Vinilo Piso",
         weight: "200mic",
         measures: ["1.27x50m", "1.37x50m", "1.52x50m"],
-        file: "/ViniloGris.pdf",
+        file: "/FloorGraphics.pdf",
       },
       {
         id: 6,
@@ -203,14 +203,14 @@ export const productCategories: ProductCategory[] = [
         label: "Fotografíco Semibrillo",
         weight: "190gr",
         measures: ["1.37x50m"],
-        file: "/PETBacklit.pdf",
+        file: "/Fotografico.pdf",
       },
       {
         id: 2,
         label: "Fotografíco Brillo",
         weight: "180mic",
         measures: ["1.07x30m", "1.27x30m"],
-        file: "/PETBacklit.pdf",
+        file: "/Fotografico.pdf",
       },
       {
         id: 3,
@@ -224,7 +224,7 @@ export const productCategories: ProductCategory[] = [
         label: "Duratrans Doble Cara",
         weight: "450gr",
         measures: ["1.07x50", "1.27x50m", "1.52x50m"],
-        file: "/PETBacklit.pdf",
+        file: "/Duratrans.pdf",
       },
       {
         id: 4,
@@ -247,7 +247,7 @@ export const productCategories: ProductCategory[] = [
         label: "Canvas Fine Art",
         weight: "380 gr/m2",
         measures: ["1.27x30m"],
-        file: "/Algodon.pdf",
+        file: "/Canvas.pdf",
       },
       {
         id: 2,
@@ -284,7 +284,7 @@ export const productCategories: ProductCategory[] = [
         label: "L-Banner (aluminio)",
         weight: "1.300 kg",
         measures: ["0,90x1.90m (x10 uds)"],
-        file: "",
+        file: "Lbanner.pdf",
       },
     ],
     image: "roll-up.png",

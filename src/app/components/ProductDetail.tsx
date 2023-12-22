@@ -12,6 +12,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
   closeModal,
 }) => {
   const details: IProductSubcategory[] = product.subcategory;
+  console.log(details);
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const handleAccordionClick = (index: number) => {
@@ -96,15 +97,22 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
                         ))}
                       </select>
                     </div>
-                    <a
-                      onClick={() => {
-                        window.open(detail.file || "", "_blank");
-                      }}
-                      className="inline-flex items-center gap-2 px-3 py-2 mt-4 text-lg font-garamond font-bold text-center text-white bg-green-800 rounded-sm transform transition-transform hover:scale-110"
-                    >
-                      <FaFilePdf />
-                      Ficha Técnica
-                    </a>
+                    {detail.file ? (
+                      <a
+                        onClick={() => {
+                          window.open(detail.file || "", "_blank");
+                        }}
+                        className="inline-flex items-center gap-2 px-3 py-2 mt-4 text-lg font-garamond font-bold text-center text-white bg-green-800 rounded-sm transform transition-transform duration-00 hover:scale-110"
+                      >
+                        <FaFilePdf />
+                        Ficha Técnica
+                      </a>
+                    ) : (
+                      <a className="inline-flex items-center gap-2 px-3 py-2 mt-4 text-lg cursor-not-allowed font-garamond font-bold text-center text-white bg-gray-500 rounded-sm">
+                        <FaFilePdf />
+                        Ficha Técnica
+                      </a>
+                    )}
                   </div>
                 )}
               </div>
