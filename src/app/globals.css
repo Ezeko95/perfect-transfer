@@ -30,6 +30,11 @@
   }
 }
 
+.text-xxs {
+  font-size: 0.625rem;
+  line-height: 1rem;
+}
+
 .slide-in-right {
   animation: slideInRight 1s ease forwards;
 }

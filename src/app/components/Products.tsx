@@ -40,9 +40,8 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
       ref={sectionRef2}
       className={`flex flex-col justify-center items-center min-w-screen ${
         blockScroll ? "overflow-hidden" : ""
-      }`}
-    >
-      <div className="grid grid-cols-2 md:grid-cols-4 max-w-8xl justify-center py-10 gap-10">
+      }`}>
+      <div className="grid grid-cols-2 md:grid-cols-4 max-w-screen md:max-w-8xl justify-center py-10 gap-1 md:gap-10">
         {productCategories.map((category: ProductCategory) => (
           <ProductCard
             key={category.id}
@@ -54,8 +53,7 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
       <div className="flex items-center justify-center">
         <a
           onClick={() => window.open("/catalogo.pdf", "_blank")}
-          className="inline-flex items-center gap-x-2 mt-10 bg-green-700 text-white font-garamond font-extrabold text-lg md:text-2xl transition-transform duration-300 transform hover:scale-110 py-4 px-6 rounded-md mb-20"
-        >
+          className="inline-flex items-center gap-x-2 mt-10 bg-green-700 text-white font-garamond font-extrabold text-lg md:text-2xl transition-transform duration-300 transform hover:scale-110 py-4 px-6 rounded-md mb-20">
           <FaFilePdf />
           Ver catálogo
         </a>
