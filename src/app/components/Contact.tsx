@@ -51,13 +51,12 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
     <div
       id="contact"
       ref={sectionRef3}
-      className="flex flex-col justify-center min-h-screen"
-    >
+      className="flex flex-col justify-center min-h-screen">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="font-garamond text-7xl font-bold mb-5">
+        <h1 className="font-garamond text-4xl md:text-7xl font-bold mb-5">
           Ponete en contacto
         </h1>
-        <p className="font-garamond text-2xl">
+        <p className="font-garamond text-lg text-center md:text-2xl">
           Tenés alguna pregunta? Querés saber más sobre nosotros? Ponete en
           contacto con nosotros!
         </p>
@@ -108,8 +107,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
           <button
             id="submit"
             className="mb-20 border-gray-600 hover:bg-green-700 text-black font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded"
-            type="submit"
-          >
+            type="submit">
             Enviar
           </button>
         </form>
@@ -122,8 +120,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
               borderRadius: "5px",
               boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
               marginBottom: "50px",
-            }}
-          >
+            }}>
             Tu mensaje ha sido enviado!
           </p>
         )}
@@ -136,8 +133,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
               borderRadius: "5px",
               boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
               marginBottom: "50px",
-            }}
-          >
+            }}>
             Tu mensaje esta incompleto, por favor llena todos los campos
           </p>
         )}

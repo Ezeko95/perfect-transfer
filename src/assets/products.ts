@@ -200,14 +200,14 @@ export const productCategories: ProductCategory[] = [
     subcategory: [
       {
         id: 1,
-        label: "Fotografíco Semibrillo",
+        label: "Fotografíco Irrompible Semibrillo",
         weight: "190gr",
         measures: ["1.37x50m"],
         file: "/Fotografico.pdf",
       },
       {
         id: 2,
-        label: "Fotografíco Brillo",
+        label: "Fotografíco Irrompible Brillo",
         weight: "180mic",
         measures: ["1.07x30m", "1.27x30m"],
         file: "/Fotografico.pdf",

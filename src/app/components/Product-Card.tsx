@@ -20,18 +20,17 @@ const ProductCard: React.FC<ProductCardProps> = ({
         />
         <div className="flex flex-col justify-between h-full p-5">
           <div className="flex flex-col items-start">
-            <h5 className="mb-2 text-2xl font-garamond font-bold tracking-tight text-gray-900">
+            <h5 className="mb-2 text-lg md:text-2xl font-garamond font-bold tracking-tight text-gray-900">
               {category.name}
             </h5>
-            <p className="mb-2 font-garamond text-gray-700">
+            <p className="text-sm md:text-2xl mb-2 font-garamond text-gray-700">
               {category.description}
             </p>
           </div>
           <div className="mt-auto">
             <button
               onClick={() => openDetailsModal(category)}
-              className="inline-flex items-center px-3 py-1 text-lg font-garamond font-bold text-center text-white bg-green-700 rounded-sm hover:bg-gray-400 hover:text-black"
-            >
+              className="inline-flex items-center px-3 py-1 text-sm md:text-lg font-garamond font-bold text-center text-white bg-green-700 rounded-sm hover:bg-gray-400 hover:text-black">
               Ver más
             </button>
           </div>
