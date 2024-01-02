@@ -54,11 +54,11 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
       className="flex flex-col justify-center min-h-screen">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-garamond text-4xl md:text-7xl font-bold mb-5">
-          Ponete en contacto
+          Contactános
         </h1>
         <p className="font-garamond text-lg text-center md:text-2xl">
           Tenés alguna pregunta? Querés saber más sobre nosotros? Ponete en
-          contacto con nosotros!
+          contacto!
         </p>
       </div>
       <div className="flex flex-col items-center max-w-full mt-10">

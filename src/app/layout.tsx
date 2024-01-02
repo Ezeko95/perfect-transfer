@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Perfect Transfer SRL",
-  description: "Hecho por Gianluca Cianchi",
+  description:
+    "Perfect Transfer SRL, empresa de venta mayorista de insumos gráficos como ser: vinilos, lonas, papeles, tintas, etc. para impresoras de gran formato.",
 };
 
 export default function RootLayout({
