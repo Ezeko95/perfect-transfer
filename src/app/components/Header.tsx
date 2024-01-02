@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <div className="flex items-center justify-center">
         <img src="/logo-viejo.png" alt="Company Logo" className="h-6 md:h-12" />
       </div>
-      <div className="flex flex-col items-center gap-y-1 text-xs md:text-sm">
+      <div className="flex flex-col items-center gap-y-1 text-xxs md:text-sm">
         <p className="text-black dark:text-white">
           Norberto “Pappo” Napolitano 1652, C.A.B.A.
         </p>
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           <MdOutlineEmail />
           administracion@perfecttransfer.com.ar
         </p>
-        <div className="flex flex-row items-center gap-x-2 text-xs md:text-sm">
+        <div className="flex flex-row items-center gap-x-2 text-xxs md:text-sm">
           <a
             href="https://wa.me/5491150539020"
             target="_blank"
