@@ -18,10 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <meta
-          property="og:image"
-          content="https://www.perfect-transfer.com.ar/logo-viejo.png"
-        />
+        <meta property="og:image" content="/meta-logo.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Perfect-Transfer logo" />
