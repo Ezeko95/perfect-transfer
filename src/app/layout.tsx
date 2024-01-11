@@ -18,6 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta property="og:image" content="/logo-invertido.png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:image:alt" content="Company Logo" />
         <link rel="icon" href="/logo-miniatura.png" sizes="logo" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
