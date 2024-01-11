@@ -18,10 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <meta property="og:image" content="/logo-invertido.png" />
+        <meta
+          property="og:image"
+          content="https://www.perfect-transfer.com.ar/logo-viejo.png"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Company Logo" />
+        <meta property="og:image:alt" content="Perfect-Transfer logo" />
         <link rel="icon" href="/logo-miniatura.png" sizes="logo" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
