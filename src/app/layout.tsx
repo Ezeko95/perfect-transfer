@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://perfect-transfer.com.ar"), 
+  metadataBase: new URL("https://perfect-transfer.com.ar"),
   title: "Perfect Transfer SRL",
   description:
     "Perfect Transfer SRL, empresa argentina de venta mayorista de insumos gráficos como ser: vinilos, lonas, papeles, tintas, etc. para impresoras de gran formato.",
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es_AR" className="scroll-smooth">
       <head>
         <meta property="og:image" content="/meta-logo.png" />
         <meta property="og:image:width" content="1200" />

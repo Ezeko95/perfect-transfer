@@ -18,13 +18,13 @@ const Header: React.FC = () => {
         <div className="flex justify-center items-center font-garamond">
           <a
             href="#product"
-            className="text-black bg-white px-4 py-3 md:px-5 md:py-2 transition-transform transform hover:scale-110 rounded-sm text-lg md:text-2xl font-bold inline-block shadow-r-md">
+            className="text-black bg-white px-4 py-3 md:px-5 md:py-2 transition-transform transform hover:scale-105 rounded-sm text-lg md:text-2xl font-bold inline-block shadow-r-md">
             Productos
           </a>
           <span className="mx-10" />
           <a
             href="#contact"
-            className="text-white bg-transparent border-2 border-white  transition-transform transform hover:scale-110 hover:shadow-r-md px-3 py-3 md:px-5 md:py-2 rounded-sm text-lg md:text-2xl font-bold inline-block">
+            className="text-white bg-transparent border-2 border-white  transition-transform transform hover:scale-105 hover:shadow-r-md px-3 py-3 md:px-5 md:py-2 rounded-sm text-lg md:text-2xl font-bold inline-block">
             Contacto
           </a>
         </div>

@@ -68,7 +68,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
             className="border border-gray-700 text-black font-medium rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="text"
             name="name"
-            placeholder="Escribe tu nombre"
+            placeholder="Nombre"
             value={contactForm.name}
             onChange={changeHandler}
           />
@@ -79,17 +79,17 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
             className="border border-gray-700 text-black font-medium  rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="email"
             name="email"
-            placeholder="Escribe tu email"
+            placeholder="Email"
             value={contactForm.email}
             onChange={changeHandler}
           />
           <br />
-          <label className="font-garamond text-2xl">Numero de telefono</label>
+          <label className="font-garamond text-2xl">Teléfono</label>
           <input
             className="border border-gray-700 text-black font-medium rounded-md w-96 h-10 px-2 font-garamond text-lg"
             type="tel"
             name="phone"
-            placeholder="Escribe tu telefono"
+            placeholder="Teléfono"
             value={contactForm.phone}
             onChange={changeHandler}
           />
@@ -100,7 +100,7 @@ const Contact: React.FC<ContactProps> = ({ sectionRef3 }) => {
             value={contactForm.comment}
             rows={6}
             name="comment"
-            placeholder="Escribe tu mensaje"
+            placeholder="Escribe un mensaje"
             onChange={changeHandler}
           />
           <br />
