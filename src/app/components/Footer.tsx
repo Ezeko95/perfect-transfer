@@ -1,14 +1,23 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
+  // 385 x 64
   return (
     <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a className="flex items-center">
-              <img src="/logo-viejo.png" className="h-16 me-3" alt="logo" />
+              <Image
+                src="/logo-viejo.webp"
+                width={"385"}
+                height={"64"}
+                className="h-16 me-3"
+                alt="Perfect-transfer-logo"
+                loading="lazy"
+              />
             </a>
           </div>
           <div className="grid grid-cols-2 sm:gap-6 sm:grid-cols-3">
@@ -41,8 +50,7 @@ const Footer: React.FC = () => {
                     href="https://www.instagram.com/perfecttransfersrl/"
                     className="hover:underline "
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    rel="noopener noreferrer">
                     Instagram
                   </a>
                 </li>
@@ -51,8 +59,7 @@ const Footer: React.FC = () => {
                     href="https://www.facebook.com/perfecttransfersrl"
                     className="hover:underline"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    rel="noopener noreferrer">
                     Facebook
                   </a>
                 </li>

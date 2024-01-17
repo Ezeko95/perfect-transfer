@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Landing from "../src/app/components/Landing";
+import Landing from "../src/app/components/Header";
 import { describe } from "node:test";
 
 describe("Landing", () => {

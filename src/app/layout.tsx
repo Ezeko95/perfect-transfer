@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://perfect-transfer.com.ar"), 
   title: "Perfect Transfer SRL",
   description:
-    "Perfect Transfer SRL, empresa de venta mayorista de insumos gráficos como ser: vinilos, lonas, papeles, tintas, etc. para impresoras de gran formato.",
+    "Perfect Transfer SRL, empresa argentina de venta mayorista de insumos gráficos como ser: vinilos, lonas, papeles, tintas, etc. para impresoras de gran formato.",
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    url: "https://perfect-transfer.com.ar",
+    siteName: "Perfect Transfer SRL",
+    images: [
+      {
+        url: "/meta-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Perfect-Transfer logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

@@ -95,7 +95,7 @@ export const productCategories: ProductCategory[] = [
         file: "/ViniloEstatico.pdf",
       },
     ],
-    image: "vinilo.png",
+    image: "/vinilo.png",
   },
   {
     id: 3,
@@ -190,7 +190,7 @@ export const productCategories: ProductCategory[] = [
         file: "/LonaFront.pdf",
       },
     ],
-    image: "lona.png",
+    image: "/lona.png",
   },
   {
     id: 5,
@@ -257,7 +257,7 @@ export const productCategories: ProductCategory[] = [
         file: "/TelaFlag.pdf",
       },
     ],
-    image: "tela.png",
+    image: "/tela.png",
   },
   {
     id: 7,
@@ -287,7 +287,7 @@ export const productCategories: ProductCategory[] = [
         file: "Lbanner.pdf",
       },
     ],
-    image: "roll-up.png",
+    image: "/roll-up.png",
   },
   {
     id: 8,
@@ -322,7 +322,7 @@ export const productCategories: ProductCategory[] = [
         file: null,
       },
     ],
-    image: "montaje.png",
+    image: "/montaje.png",
   },
   {
     id: 9,
@@ -345,6 +345,6 @@ export const productCategories: ProductCategory[] = [
         file: "PapelTransfer.pdf",
       },
     ],
-    image: "Papel-transfer.png",
+    image: "/Papel-transfer.png",
   },
 ];

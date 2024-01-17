@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../globals.css";
+import Image from "next/image";
 
 interface AboutUsProps {
   sectionRef1: React.RefObject<HTMLDivElement>;
@@ -52,12 +53,18 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
         <div
           className={` ${!isVisible ? "" : "slide-in-right"}`}
           ref={componentRef}>
-          <img src="/prueba.jpg" width={"620"} alt="prueba" />
+          <Image
+            src="/impresion-digital.jpg"
+            alt="impresion-digital"
+            width={"620"}
+            height={"348"}
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="flex flex-row-reverse items-center justify-center px-8 py-6 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div
-          className={` ${!isVisible ? "" : "slide-in-right"}`}
+          className={` ${!isVisible ? "hidden-element" : "slide-in-right"}`}
           ref={componentRef}>
           <h2 className="text-lg md:text-4xl max-w-sm font-garamond font-light italic text-white py-2 px-4 md:py-4 md:px-6 rounded-t-sm bg-green-700">
             Nuestra visión
@@ -71,9 +78,15 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           </p>
         </div>
         <div
-          className={` ${!isVisible ? "" : "slide-in-right"}`}
+          className={` ${!isVisible ? "hidden-element" : "slide-in-right"}`}
           ref={componentRef}>
-          <img src="/prueba2.jpg" alt="prueba2" width={"620"} />
+          <Image
+            src="/impresion-digital-2.jpg"
+            alt="impresion-digital-2"
+            width={"620"}
+            height={"348"}
+            loading="lazy"
+          />
         </div>
       </div>
     </div>

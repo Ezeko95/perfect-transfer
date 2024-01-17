@@ -1,33 +1,35 @@
+"use client";
 import React from "react";
-import { FaWhatsapp } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
 
 const Header: React.FC = () => {
   return (
-    <header className="flex justify-around items-center md:p-2 bg-white dark:bg-gray-900">
-      <div className="flex items-center justify-center">
-        <img src="/logo-viejo.png" alt="Company Logo" className="h-6 md:h-12" />
-      </div>
-      <div className="flex flex-col items-center gap-y-1 text-xxs md:text-sm">
-        <p className="text-black dark:text-white">
-          Norberto “Pappo” Napolitano 1652, C.A.B.A.
-        </p>
-        <p className="text-black dark:text-white flex flex-row items-center gap-x-1">
-          <MdOutlineEmail />
-          administracion@perfecttransfer.com.ar
-        </p>
-        <div className="flex flex-row items-center gap-x-2 text-xxs md:text-sm">
+    <div className="relative h-screen overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/background-perfect-transfer.webp")',
+        }}></div>
+      <div className="flex flex-col z-10 relative h-full justify-center items-center gap-y-52 sm:gap-y-10 md:gap-y-16 lg:gap-y-48">
+        <div className="mb-4 mt-4 p-3 max-w-5xl bg-black bg-opacity-50 shadow-2xl py-8 relative backdrop-blur sm:p-2 md:p-2 sm:max-w-xl md:max-w-xl lg:max-w-5xl">
+          <h1 className="text-lg text-white font-tinos italic text-center z-10 sm:text-xl md:text-2xl lg:text-5xl">
+            Convertimos la impresión en una experiencia de primera categoría.
+          </h1>
+        </div>
+        <div className="flex justify-center items-center font-garamond">
           <a
-            href="https://wa.me/5491150539020"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-rowitems-center gap-x-1 text-black dark:text-white hover:text-blue-600">
-            <FaWhatsapp />
-            (+54) 911 5053-9020
+            href="#product"
+            className="text-black bg-white px-4 py-3 md:px-5 md:py-2 transition-transform transform hover:scale-110 rounded-sm text-lg md:text-2xl font-bold inline-block shadow-r-md">
+            Productos
+          </a>
+          <span className="mx-10" />
+          <a
+            href="#contact"
+            className="text-white bg-transparent border-2 border-white  transition-transform transform hover:scale-110 hover:shadow-r-md px-3 py-3 md:px-5 md:py-2 rounded-sm text-lg md:text-2xl font-bold inline-block">
+            Contacto
           </a>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

@@ -1,5 +1,6 @@
 import { ProductCategory, IProductSubcategory } from "../../assets/products";
 import { FaFilePdf } from "react-icons/fa6";
+import Image from "next/image";
 import React, { useState } from "react";
 
 interface ProductDetailProps {
@@ -19,22 +20,22 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  //571 x 320
+
   return (
     <div className="fixed top-0 left-0 w-full min-h-screen max-h-fit flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
       <div className=" bg-white bg-opacity-50 shadow-2xl max-h-fit min-h-fit backdrop-blur rounded-md px-16 py-10 font-garamond ">
         <div className="flex flex-row justify-between">
-          <h2 className="text-3xl text-white">{product.name}</h2>
+          <h2 className="text-3xl text-black font-bold">{product.name}</h2>
           <button
             onClick={closeModal}
-            className="flex items-center justify-center w-8 h-8 bg-green-700 hover:bg-gray-300 rounded-sm text-white focus:outline-none transform transition-transform hover:scale-110"
-          >
+            className="flex items-center justify-center w-8 h-8 bg-green-700 hover:bg-gray-300 rounded-sm text-white focus:outline-none transform transition-transform hover:scale-110">
             <svg
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -44,10 +45,13 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
             </svg>
           </button>
         </div>
-        <img
+        <Image
           src={product.image}
           alt={product.name}
+          width={"571"}
+          height={"320"}
           className="h-80 w-fit mt-4 rounded-sm"
+          loading="lazy"
         />
         <div>
           <div className="bg-gray-300 overflow-hidden overflow-y-scroll max-h-70 rounded-sm">
@@ -55,16 +59,14 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
               <div className="bg-white p-2" key={detail.id}>
                 <div
                   className=" cursor-pointer flex flex-row justify-between items-center"
-                  onClick={() => handleAccordionClick(index)}
-                >
+                  onClick={() => handleAccordionClick(index)}>
                   <h3 className="text-xl">{detail.label}</h3>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
+                    stroke="currentColor">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -82,16 +84,14 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
                     <div className="text-lg">
                       <label
                         className="underline"
-                        htmlFor="measurementDropdown"
-                      >
+                        htmlFor="measurementDropdown">
                         Medidas:
                       </label>
                       <select
                         id="measurementDropdown"
-                        className="text-gray-600 border-none rounded-sm p-1 ml-2 focus:border-none"
-                      >
+                        className="text-gray-600 border-none rounded-sm p-1 ml-2 focus:border-none">
                         {detail.measures.map((measure, i) => (
-                          <option key={i} value={measure}>
+                          <option key={i} value={measure} disabled>
                             {measure}
                           </option>
                         ))}
@@ -102,8 +102,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
                         onClick={() => {
                           window.open(detail.file || "", "_blank");
                         }}
-                        className="inline-flex items-center gap-2 px-3 py-2 mt-4 text-lg font-garamond font-bold text-center text-white bg-green-800 rounded-sm transform transition-transform duration-00 hover:scale-110"
-                      >
+                        className="inline-flex items-center gap-2 px-3 py-2 mt-4 text-lg font-garamond font-bold text-center text-white bg-green-800 rounded-sm transform transition-transform duration-00 hover:scale-110">
                         <FaFilePdf />
                         Ficha Técnica
                       </a>
