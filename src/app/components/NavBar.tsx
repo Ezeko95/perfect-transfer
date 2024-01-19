@@ -11,8 +11,8 @@ const NavBar: React.FC = () => {
           src="/logo-viejo.webp"
           alt="Perfect-Transfer-Logo"
           width={"289"}
-          height={"48"}
-          className="h-6 md:h-12"
+          height={"60"}
+          className="max-w-full h-8 sm:h-10 w-auto md:h-12"
         />
       </div>
       <div className="flex flex-col items-center gap-y-1 text-xxs md:text-sm">

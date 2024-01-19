@@ -1,7 +1,7 @@
 import { ProductCategory, IProductSubcategory } from "../../assets/products";
 import { FaFilePdf } from "react-icons/fa6";
-import Image from "next/image";
 import React, { useState } from "react";
+import Image from "next/image";
 
 interface ProductDetailProps {
   product: ProductCategory;
@@ -13,14 +13,12 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
   closeModal,
 }) => {
   const details: IProductSubcategory[] = product.subcategory;
-  console.log(details);
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const handleAccordionClick = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
-  //571 x 320
 
   return (
     <div className="fixed top-0 left-0 w-full min-h-screen max-h-fit flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">

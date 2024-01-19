@@ -1,7 +1,7 @@
 import ProductDetail from "./ProductDetail";
 import ProductCard from "./Product-Card";
 import Products from "./Products";
-import Header from "./Header";
+import Hero from "./Hero";
 import Contact from "./Contact";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
@@ -12,7 +12,7 @@ export {
   Footer,
   NavBar,
   Contact,
-  Header,
+  Hero,
   Products,
   ProductCard,
   ProductDetail,

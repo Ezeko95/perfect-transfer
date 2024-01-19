@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import { About, Contact, Footer, Header, NavBar, Products } from "./components";
+import { About, Contact, Footer, NavBar, Products, Hero } from "./components";
 
 const Home: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   return (
     <>
       <NavBar />
-      <Header />
+      <Hero />
       <About sectionRef1={sectionRef1} />
       <div className="mt-10 border-t border-gray-500"></div>
       <div className="mt-10"></div>

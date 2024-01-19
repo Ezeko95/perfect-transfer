@@ -1,16 +1,17 @@
-"use client";
 import React from "react";
+import Image from "next/image";
 
-const Header: React.FC = () => {
+export default function Hero() {
   return (
-    <div className="relative h-screen overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: 'url("/background-perfect-transfer.webp")',
-        }}></div>
+    <div className="w-full h-screen flex justify-center items-center overflow-hidden relative bg-black">
+      <Image
+        src={`/background.jpg`}
+        alt="Hero Image"
+        className="opacity-60 object-cover"
+        fill
+      />
       <div className="flex flex-col z-10 relative h-full justify-center items-center gap-y-52 sm:gap-y-10 md:gap-y-16 lg:gap-y-48">
-        <div className="mb-4 mt-4 p-3 max-w-5xl bg-black bg-opacity-50 shadow-2xl py-8 relative backdrop-blur sm:p-2 md:p-2 sm:max-w-xl md:max-w-xl lg:max-w-5xl">
+        <div className="mb-4 mt-4 max-w-5xl bg-black bg-opacity-50 shadow-2xl py-2 sm:py-4 md:py-8 relative backdrop-blur  sm:max-w-xl lg:max-w-5xl">
           <h1 className="text-lg text-white font-tinos italic text-center z-10 sm:text-xl md:text-2xl lg:text-5xl">
             Convertimos la impresión en una experiencia de primera categoría.
           </h1>
@@ -31,6 +32,4 @@ const Header: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default Header;
+}
