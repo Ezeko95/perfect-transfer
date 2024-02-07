@@ -111,14 +111,14 @@ export const productCategories: ProductCategory[] = [
           "1.37x50m (300x500)",
           "1.52x50m (300x500)",
         ],
-        file: "/LonaFront.pdf",
+        file: "/Frontlit-White-13oz.pdf",
       },
       {
         id: 2,
-        label: "Lona Front Gris",
+        label: "Lona Front Gris (9oz)",
         weight: "9oz 840x840",
         measures: ["2.50x70m", "3.20x70m"],
-        file: "/LonaFront.pdf",
+        file: "/Frontlit-Cold-White&Grey-Glossy-9oz.pdf",
       },
       {
         id: 3,
@@ -136,7 +136,7 @@ export const productCategories: ProductCategory[] = [
           "2.20x50m",
           "3.20x50m",
         ],
-        file: "/LonaFront.pdf",
+        file: "/Frontlit-Glossy&Matte13oz.pdf",
       },
       {
         id: 5,
@@ -151,7 +151,7 @@ export const productCategories: ProductCategory[] = [
           "2.50x50m",
           "3.20x50m",
         ],
-        file: "/LonaFront.pdf",
+        file: "/Frontlit-Glossy&Matte13oz.pdf",
       },
       {
         id: 6,
@@ -179,14 +179,14 @@ export const productCategories: ProductCategory[] = [
           "2.50x50m",
           "3.20x50m",
         ],
-        file: "/LonaFront.pdf",
+        file: "/Blockout-Double-Side-Matte-15oz.pdf",
       },
       {
         id: 8,
         label: "Lona Mesh con Liner",
         weight: "360grs 1000x1000",
         measures: ["1.60x50m", "2.50x50m", "3.20x50m"],
-        file: "/LonaFront.pdf",
+        file: "/Mesh-with-linner-1000x000.pdf",
       },
     ],
     image: "/lona.png",
@@ -199,7 +199,7 @@ export const productCategories: ProductCategory[] = [
     subcategory: [
       {
         id: 1,
-        label: "Fotografíco Irrompible Semibrillo",
+        label: "Fotografíco Semibrillo",
         weight: "190gr",
         measures: ["1.37x50m"],
         file: "/Fotografico.pdf",
