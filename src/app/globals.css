@@ -35,6 +35,10 @@
   line-height: 1rem;
 }
 
+.hidde-element {
+  visibility: hidden;
+}
+
 .slide-in-right {
   animation: slideInRight 1s ease forwards;
 }

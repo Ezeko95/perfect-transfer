@@ -1,29 +1,34 @@
-import React from "react";
 import { ProductCategory } from "../../assets/products";
+import Image from "next/image";
+import React from "react";
 
 interface ProductCardProps {
   category: ProductCategory;
   openDetailsModal: (product: ProductCategory) => void;
 }
-
 const ProductCard: React.FC<ProductCardProps> = ({
   category,
   openDetailsModal,
 }) => {
   return (
     <>
-      <div className="flex items-center flex-col max-w-xs bg-white rounded-t-md shadow-xl transition-transform transform duration-500 hover:scale-110 hover:shadow-2xl">
-        <img
+      <div
+        onClick={() => openDetailsModal(category)}
+        className="flex items-center flex-col max-w-xs bg-white rounded-t-md shadow-xl transition-transform transform duration-500 hover:scale-105 hover:shadow-2xl">
+        <Image
           src={category.image}
-          alt="product"
+          alt="imagen-producto"
+          width={"318"}
+          height={"178"}
           className="rounded-t-md max-w-full"
+          loading="lazy"
         />
         <div className="flex flex-col justify-between h-full p-5">
           <div className="flex flex-col items-start">
-            <h5 className="mb-2 text-lg md:text-2xl font-garamond font-bold tracking-tight text-gray-900">
+            <h5 className="mb-2 text-md md:text-2xl font-garamond font-bold tracking-tight text-gray-900">
               {category.name}
             </h5>
-            <p className="text-sm md:text-2xl mb-2 font-garamond text-gray-700">
+            <p className="text-sm md:text-base/6 mb-2 font-garamond text-gray-900 ">
               {category.description}
             </p>
           </div>
@@ -41,7 +46,3 @@ const ProductCard: React.FC<ProductCardProps> = ({
 };
 
 export default ProductCard;
-
-{
-  /* <hr className="border-[1px] border-black w-4/5" /> */
-}

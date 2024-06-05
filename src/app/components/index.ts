@@ -1,20 +1,18 @@
 import ProductDetail from "./ProductDetail";
 import ProductCard from "./Product-Card";
 import Products from "./Products";
-import Landing from "./Landing";
+import Hero from "./Hero";
 import Contact from "./Contact";
-import Header from "./Header";
-import Footer from "./Footer";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 import About from "./About";
 
 export {
   About,
   Footer,
-  Header,
   NavBar,
   Contact,
-  Landing,
+  Hero,
   Products,
   ProductCard,
   ProductDetail,

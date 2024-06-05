@@ -3,12 +3,25 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://perfect-transfer.com.ar"),
   title: "Perfect Transfer SRL",
   description:
-    "Perfect Transfer SRL, empresa de venta mayorista de insumos gráficos como ser: vinilos, lonas, papeles, tintas, etc. para impresoras de gran formato.",
+    "Perfect Transfer SRL, empresa argentina de venta mayorista de insumos gráficos como ser: vinilos, lonas, papeles, tintas, etc. para impresoras de gran formato.",
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    url: "https://perfect-transfer.com.ar",
+    siteName: "Perfect Transfer SRL",
+    images: [
+      {
+        url: "/meta-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Perfect-Transfer logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -17,12 +30,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es_AR" className="scroll-smooth">
       <head>
-        <meta property="og:image" content="/logo-invertido.png" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="400" />
-        <meta property="og:image:alt" content="Company Logo" />
+        <meta property="og:image" content="/meta-logo.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Perfect-Transfer logo" />
         <link rel="icon" href="/logo-miniatura.png" sizes="logo" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

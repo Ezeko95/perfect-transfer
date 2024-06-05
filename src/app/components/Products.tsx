@@ -41,7 +41,7 @@ const Products: React.FC<ProductsProps> = ({ sectionRef2 }) => {
       className={`flex flex-col justify-center items-center min-w-screen ${
         blockScroll ? "overflow-hidden" : ""
       }`}>
-      <div className="grid grid-cols-2 md:grid-cols-4 max-w-screen md:max-w-8xl justify-center py-10 gap-1 md:gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-w-screen md:max-w-8xl justify-center py-10 gap-1 md:gap-10">
         {productCategories.map((category: ProductCategory) => (
           <ProductCard
             key={category.id}

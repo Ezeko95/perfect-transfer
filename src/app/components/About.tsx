@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../globals.css";
+import Image from "next/image";
 
 interface AboutUsProps {
   sectionRef1: React.RefObject<HTMLDivElement>;
@@ -32,7 +33,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
     };
   }, [componentRef]);
   return (
-    <div className="font-garamond" id="about" ref={sectionRef1}>
+    <div className="font-garamond w-11/12 mx-auto" id="about" ref={sectionRef1}>
       <div className="flex flex-row items-center justify-center px-8 py-6 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div
           className={` ${!isVisible ? "" : "slide-in-right"}`}
@@ -40,7 +41,7 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           <h2 className="text-lg md:text-4xl font-garamond font-light italic text-white py-2 px-4 md:py-4 md:px-6 rounded-t-sm max-w-sm bg-green-700">
             Misión
           </h2>
-          <p className="text-md md:text-2xl max-w-4xl pt-8 text-justify text-black font-normal rounded-b-sm rounded-r-sm">
+          <p className="text-md md:text-xl max-w-4xl pt-8 text-justify text-black font-normal rounded-b-sm rounded-r-sm">
             Estamos comprometidos a ser el socio confiable y líder en la
             distribución de insumos gráficos, proporcionando productos de
             calidad excepcional que potencien la creatividad y la excelencia en
@@ -52,17 +53,23 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
         <div
           className={` ${!isVisible ? "" : "slide-in-right"}`}
           ref={componentRef}>
-          <img src="/prueba.jpg" width={"620"} alt="prueba" />
+          <Image
+            src="/impresion-digital.jpg"
+            alt="impresion-digital"
+            width={"620"}
+            height={"348"}
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="flex flex-row-reverse items-center justify-center px-8 py-6 md:px-20 md:py-16 lg:px-36 lg:py-12 gap-x-6 md:gap-x-12 lg:gap-x-20">
         <div
-          className={` ${!isVisible ? "" : "slide-in-right"}`}
+          className={` ${!isVisible ? "hidden-element" : "slide-in-right"}`}
           ref={componentRef}>
           <h2 className="text-lg md:text-4xl max-w-sm font-garamond font-light italic text-white py-2 px-4 md:py-4 md:px-6 rounded-t-sm bg-green-700">
             Nuestra visión
           </h2>
-          <p className="text-md md:text-2xl font-light text-justify max-w-4xl py-8 text-black">
+          <p className="text-md md:text-xl font-light text-justify max-w-4xl py-8 text-black">
             Ser reconocidos como la opción preferida y de referencia en la
             industria gráfica, destacando por nuestra excelencia en la calidad
             de productos, servicio al cliente y compromiso con el crecimiento
@@ -71,9 +78,15 @@ const About: React.FC<AboutUsProps> = ({ sectionRef1 }) => {
           </p>
         </div>
         <div
-          className={` ${!isVisible ? "" : "slide-in-right"}`}
+          className={` ${!isVisible ? "hidden-element" : "slide-in-right"}`}
           ref={componentRef}>
-          <img src="/prueba2.jpg" alt="prueba2" width={"620"} />
+          <Image
+            src="/impresion-digital-2.jpg"
+            alt="impresion-digital-2"
+            width={"620"}
+            height={"348"}
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
